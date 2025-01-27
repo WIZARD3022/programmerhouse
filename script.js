@@ -142,3 +142,74 @@ document.querySelector('.contact-form').addEventListener("submit", async functio
     }
 });
 
+// JavaScript functionality to display "More" link on hover within the card
+
+document.addEventListener("DOMContentLoaded", () => {
+    const serviceCards = document.querySelectorAll(".service-card");
+
+    serviceCards.forEach((card) => {
+        // Create a "More" link element
+        const moreLink = document.createElement("a");
+        moreLink.innerText = "More";
+        moreLink.href = "#"; // You can update this URL as needed
+        moreLink.style.position = "absolute";
+        moreLink.style.top = "10px";
+        moreLink.style.right = "10px";
+        moreLink.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        moreLink.style.color = "white";
+        moreLink.style.padding = "5px 10px";
+        moreLink.style.borderRadius = "5px";
+        moreLink.style.textDecoration = "none";
+        moreLink.style.fontSize = "12px";
+        moreLink.style.display = "none"; // Initially hidden
+        moreLink.style.zIndex = "10";
+
+        card.style.position = "relative"; // Ensure the card is relatively positioned
+        card.appendChild(moreLink);
+
+        // Add event listeners to show/hide the "More" link
+        card.addEventListener("mouseenter", () => {
+            moreLink.style.display = "block";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            moreLink.style.display = "none";
+        });
+    });
+});
+
+// JavaScript functionality to display "More" link on hover within the card
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+        // Create a "More" link element
+        const moreLink = document.createElement("a");
+        moreLink.innerText = "More";
+        moreLink.href = "#"; // You can update this URL as needed
+        moreLink.style.position = "absolute";
+        moreLink.style.top = "10px";
+        moreLink.style.right = "10px";
+        moreLink.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        moreLink.style.color = "white";
+        moreLink.style.padding = "5px 10px";
+        moreLink.style.borderRadius = "5px";
+        moreLink.style.textDecoration = "none";
+        moreLink.style.fontSize = "12px";
+        moreLink.style.display = "none"; // Initially hidden
+        moreLink.style.zIndex = "10";
+
+        card.style.position = "relative"; // Ensure the card is relatively positioned
+        card.appendChild(moreLink);
+
+        // Add event listeners to show/hide the "More" link
+        card.addEventListener("mouseenter", () => {
+            moreLink.style.display = "block";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            moreLink.style.display = "none";
+        });
+    });
+});
