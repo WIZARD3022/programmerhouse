@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corporate Social Responsibility</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img
+        alt="Company Logo"
+        height="50"
+        src="https://storage.googleapis.com/a1aa/image/PRiFp25Dm46MNRPZKfE3NTQ7thsy8ZexsuGrEuNcFvieEwOoA.jpg"
+        width="150"
+      />
+      <div class="nav">
+        <a onclick="showContent('home')">Home</a>
+        <a onclick="showContent('about')">About Us</a>
+        <a onclick="showContent('csr')">CSR</a>
+        <a onclick="showContent('services')">Services</a>
+        <a onclick="showContent('capabilities')">Our Capabilities</a>
+        <a onclick="showContent('blog')">Blog</a>
+        <a onclick="showContent('faq')">FAQ's</a>
+        <a onclick="showContent('careers')">Careers</a>
+        <a onclick="showContent('contact')">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Home Content -->
+    <div id="home" class="content active">
+      <div class="home-container">
+        <!-- <div class="image-content">
+        <img alt="Illustration of web development and designing marketing tools" src="https://storage.googleapis.com/a1aa/image/RkebdPZ1wfntykFAAVvjtywSN4hPftIeyuW5FwtMNfU0e14BF.jpg"/>
+      </div> -->
+        <div class="home-text-content">
+          <h1>
+            <span style="font-size: 80px">Web</span>
+            <span style="font-size: 80px">developing</span>
+            &amp; Designing Company.
+          </h1>
+          <p>
+            Welcome to The Programmer House, your one-stop solution for all your
+            digital needs.
+          </p>
+          <div class="home-buttons">
+            <a class="video" onclick="display()"
+              ><i class="fas fa-play"></i> Play Intro Video</a
+            >
+          </div>
+        </div>
+        <div
+          id="video"
+          class="notshow"
+          style="background-color: black; height: auto; width: 650px"
+        >
+          <video
+            style="height: 100%; width: 100%"
+            controls
+            src="./src/intro.mp4"
+          ></video>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <div class="services-container">
+        <div class="card">
+          <img
+            alt="Illustration of web designing services"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/fuFIjFutnB1HAasn2P2Oql1LxAGw4iJMs5emo5Bil3A4ZjHUA.jpg"
+            width="300"
+          />
+          <div class="card-title">Web Designing Services</div>
+        </div>
+        <!-- <div class="card dropdown">
+        <div class="dropdown-title">Web Application Development</div>
+        <div class="dropdown-content">
+          <a href="#">Web Application Development</a>
+          <a href="#">eCommerce Web Development</a>
+          <a href="#">Mobile App Development</a>
+          <a href="#">Custom CMS Development</a>
+          <a href="#">CMS Web Development</a>
+          <a href="#">Multi Vendor Ecommerce</a>
+        </div>
+      </div> -->
+        <div class="card">
+          <img
+            alt="Illustration of business branding services"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/RkebdPZ1wfntykFAAVvjtywSN4hPftIeyuW5FwtMNfU0e14BF.jpg"
+            width="300"
+          />
+          <div class="card-title">Digital Signature</div>
+        </div>
+        <div class="card">
+          <img
+            alt="Illustration of business branding services"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/WDoyqJv5jfXAMyi79Yz9i4xaUO60Y8gCAmEsCOxt7uo9sxDKA.jpg"
+            width="300"
+          />
+          <div class="card-title">Card Designing</div>
+        </div>
+        <div class="card">
+          <img
+            alt="Illustration of digital marketing services"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/MRCNdIwxAmahBxctbhJI5DjsSrRpMeNc1VobtnxBGyo8sxDKA.jpg"
+            width="300"
+          />
+          <div class="card-title">App and Desktop Application Development</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Content -->
+
+    <!-- About Us Content -->
+    <div id="about" class="content">
+      <!-- Why Choose Us Section -->
+      <div class="why-choose-us-header">
+        <div class="text-content" style="color: black">
+          <h2 style="font-size: 70px">About Us</h2>
+          <p>
+            We are a company dedicated to innovation, sustainability, and making
+            the world a better place. Learn about our journey and mission.
+          </p>
+        </div>
+        <img
+          alt="Header image with various programming icons and a person working on a computer"
+          height="100"
+          src="https://storage.googleapis.com/a1aa/image/inIcRuykVE7TBJ2e7hqbDCYRosEizDwTOCFI7Nk3NKXDWxDKA.jpg"
+          width="400"
+        />
+      </div>
+      <div class="why-choose-us-container">
+        <div class="why-choose-us-card">
+          <img
+            alt="Shield icon"
+            height="50"
+            src="https://storage.googleapis.com/a1aa/image/CTNamONEf9xeJUFr6V2Ul8XSpAwC3pnwfL0QJ0MMZrYPYFPoA.jpg"
+            width="50"
+          />
+          <h3>We Value Integrity</h3>
+          <p>
+            We believe in doing business with uprightness, truthfulness and a
+            sincere heart for others.
+          </p>
+        </div>
+        <div class="why-choose-us-card">
+          <img
+            alt="Computer icon"
+            height="50"
+            src="https://storage.googleapis.com/a1aa/image/OuxFAzo7W4KwJZDYgqKXYptqHEqLY4L8nDfVfpefhCpNwKegC.jpg"
+            width="50"
+          />
+          <h3>Code That Works</h3>
+          <p>
+            We ourselves hand code all sites using latest technology and
+            cross-compatibility.
+          </p>
+        </div>
+        <div class="why-choose-us-card">
+          <img
+            alt="Deadline icon"
+            height="50"
+            src="https://storage.googleapis.com/a1aa/image/emm1pYi4C3QVSKaSzcvufFP5eqpelgmxmLmvAC5YPnbUwKegC.jpg"
+            width="50"
+          />
+          <h3>Never Miss Deadlines</h3>
+          <p>
+            We know that time is money in business, so we apply strict deadlines
+            and adhere to them.
+          </p>
+        </div>
+        <div class="why-choose-us-card">
+          <img
+            alt="Design icon"
+            height="50"
+            src="https://storage.googleapis.com/a1aa/image/1emddTzGZEWnJig0eSBcIaSfcdPqWqeAGIHNr3tAxNakwKegC.jpg"
+            width="50"
+          />
+          <h3>Outstanding Designs</h3>
+          <p>
+            Our developers and designers first analyze your target audiences so.
+          </p>
+        </div>
+        <div class="why-choose-us-card">
+          <img
+            alt="Experience icon"
+            height="50"
+            src="https://storage.googleapis.com/a1aa/image/3aLsfWZHKCVqCCWKOmTmX8sAjEK70M61LTPjecynIgyKsiHUA.jpg"
+            width="50"
+          />
+          <h3>Extensive experience</h3>
+          <p>
+            100+ projects in various sector companies have been successfully.
+          </p>
+        </div>
+        <div class="why-choose-us-card">
+          <img
+            alt="Support icon"
+            height="50"
+            src="https://storage.googleapis.com/a1aa/image/KBfCWUew3UruMEghWnHMdHjeTbyRhogOeKSN6UOdejRhgV8gC.jpg"
+            width="50"
+          />
+          <h3>Dedicated support</h3>
+          <p>Dedicated teams of professionals that advise and monitor the.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSR Content -->
+    <div id="csr" class="content">
+      <img
+        alt="Illustration of person holding globe"
+        style="border-radius: 35px"
+        height="400"
+        src="https://storage.googleapis.com/a1aa/image/VeDs3qWGR8xLZ6QrN2xwmuPwHW9OF5YvPV2RnO7fiM6dCYHUA.jpg"
+        width="400"
+      />
+      <div class="text-content">
+        <h2>Corporate Social Responsibility</h2>
+        <p>
+          We integrate social and environmental services through our corporate
+          social responsibility program. We try to seek balance in economic,
+          social, and environmental imperatives through our corporate social
+          responsibility programs. However, we understand the fine line between
+          CSR, strategic business management, charity, and philanthropic
+          service.
+        </p>
+        <h3>A few advantages of our CSR</h3>
+        <p>
+          A properly implemented CSR may bring about a lot of advantages such as
+          enhanced capital and increased sales and profits. It also enhances
+          operational cost savings, which increase productivity and improves
+          brand image and reputation. Corporate social responsibility is a broad
+          concept which means it differs in kinds based on which it is
+          categorized into four different types.
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Content -->
+    <div id="services" class="content">
+      <div class="services-container">
+        <div class="service-card">
+          <img
+            alt="Illustration of web designing services with a computer and design tools"
+            height="150"
+            src="https://storage.googleapis.com/a1aa/image/ScnQA4yGiYYHPppsAwvQIFS3LeLTebyXrGVprNmffwTfmR8gC.jpg"
+            width="250"
+          />
+          <div class="description">Web Designing Services</div>
+        </div>
+        <div class="service-card">
+          <img
+            alt="Illustration of web application development with coding elements"
+            height="150"
+            src="https://storage.googleapis.com/a1aa/image/g2BP3TktaPa7BtSY59kEtpJjgMjJuH1rRmFzzKjyRJxMj4BF.jpg"
+            width="250"
+          />
+          <div class="description">Web Application Development</div>
+        </div>
+        <div class="service-card">
+          <img
+            alt="Illustration of business branding services with a person working on branding elements"
+            height="150"
+            src="https://storage.googleapis.com/a1aa/image/aSSlGwd1bXp5PFN3vNex6vijX4ReGoubqPe7gwbrKS8oZEPoA.jpg"
+            width="250"
+          />
+          <div class="description">Business Branding Services</div>
+        </div>
+        <div class="service-card">
+          <img
+            alt="Illustration of digital marketing services with marketing tools and graphs"
+            height="150"
+            src="https://storage.googleapis.com/a1aa/image/GNDp9wma4FrZPRZYQGiHjq24ErtQaXJY6fJJcyTIaIObGxDKA.jpg"
+            width="250"
+          />
+          <div class="description">Digital Marketing Services</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Capabilities Content -->
+    <div id="capabilities" class="content">
+      <div class="capabilities_container">
+        <div class="capability_header">
+          <div class="badge">Web Technology Expertise</div>
+          <h1>Our Capabilities</h1>
+          <p>
+            We're upgrading ourselves with the latest available technologies.
+          </p>
+          <p class="description">
+            Our web application solutions have helped innumerable clients to
+            achieve their business goals. Whether it is educational, gaming,
+            beauty, fashion, healthcare or enterprise. Our applications have
+            never failed to match up to our client's expectation with their
+            efficiency, user friendliness and aesthetics.
+          </p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <img
+              alt="HTML5 Logo"
+              height="100"
+              src="./src/html.jpg"
+              width="200"
+            />
+            <p>HTML5</p>
+          </div>
+          <div class="tech-item">
+            <img
+              alt="CSS3 Logo"
+              height="100"
+              src="./src/css.jpg"
+              width="200"
+            />
+            <p>CSS3</p>
+          </div>
+          <div class="tech-item">
+            <img
+              alt="MySQL Logo"
+              height="100"
+              src="./src/sql.jpg"
+              width="200"
+            />
+            <p>MySQL</p>
+          </div>
+          <div class="tech-item">
+            <img
+              alt="JavaScript Logo"
+              height="100"
+              src="./src/javascript.jpg"
+              width="200"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="tech-item">
+            <img
+              alt="git Logo"
+              height="100"
+              src="./src/git.jpg"
+              width="200"
+            />
+            <p>git</p>
+          </div>
+          <div class="tech-item">
+            <img
+              alt="Express js Logo"
+              height="100"
+              src="./src/express.jpg"
+              width="200"
+            />
+            <p>Express js</p>
+          </div>
+          <div class="tech-item">
+            <img
+              alt="Bootstrap Logo"
+              height="100"
+              src="./src/bootstrap.jpg"
+              width="200"
+            />
+            <p>Bootstrap</p>
+          </div>
+          <div class="tech-item">
+            <img
+              alt="Java Logo"
+              height="100"
+              src="./src/java.jpg"
+              width="200"
+            />
+            <p>Java</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Content -->
+    <div id="blog" class="content">
+      <div class="text-content">
+        <h2>Our Blog</h2>
+        <p>
+          Stay updated with our latest news, insights, and stories. Join the
+          conversation today!
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ Content -->
+    <div id="faq" class="content">
+      <div class="text-content">
+        <h2>FAQ's</h2>
+        <p>
+          Have questions? We have answers. Check out our frequently asked
+          questions for more information.
+        </p>
+        <div class="faq_container">
+          <div class="faq_header">Frequently Asked Questions</div>
+          <div class="faq-item">
+            <span
+              >Can Custom Designs be developed by The Programmers House?</span
+            >
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Yes, The Programmers House specializes in creating custom designs
+              tailored to client needs.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>How Effective is Flash while Designing a Website?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Flash is outdated and not recommended for modern website design
+              due to limited support and SEO issues.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>What is a Web 2.0 Look and Feel?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Web 2.0 emphasizes user interaction, clean design, and responsive
+              layouts for an enhanced user experience.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>How many Pages should my Website have?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              The number of pages depends on your content and goals. A typical
+              website includes Home, About, Services, and Contact pages.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span
+              >How Important is it that my Offline Presence has synergies with
+              the Web Presence?</span
+            >
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              It's crucial to ensure consistency between your offline and online
+              presence to build trust and brand identity.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Careers Content -->
+    <div id="careers" class="content">
+      <div class="text-content">
+        <h2>Careers</h2>
+        <p>
+          Looking for your next opportunity? Join our team and be a part of
+          something incredible.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Us Content -->
+    <div id="contact" class="content">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <img
+              alt="Phone icon"
+              src="./src/call.jpg"
+              class="feed-img"
+            />
+            <p class="title">Call Us.</p>
+            <p>+91 11 - 4504 7445</p>
+            <p>+918920189648</p>
+          </div>
+          <div>
+            <img
+              alt="WhatsApp icon"
+              src="./src/whatsapp.jpg"
+              class="feed-img"
+            />
+            <p class="title">WhatsApp.</p>
+            <p>+918920189648</p>
+          </div>
+          <div>
+            <img
+              alt="Email icon"
+              src="./src/email.jpg"
+              class="feed-img"
+            />
+            <p class="title">Email.</p>
+            <p>jaiswalmahesh246@gmail.com</p>
+          </div>
+          <div>
+            <img
+              alt="Location icon"
+              src="./src/location.jpg"
+              class="feed-img"
+            />
+            <p class="title">Location.</p>
+            <p>H no- 879, 2nd Floor,</p>
+            <p>New Delhi, India</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2>Get <span>In</span> Touch.</h2>
+          <input placeholder="Enter Full Name" type="text" />
+          <input placeholder="Enter Your Email" type="email" />
+          <input placeholder="Enter Phone Number" type="number" />
+          <input class="full-width" placeholder="Email Subject" type="text" />
+          <textarea placeholder="Enter Your Message"></textarea>
+          <button>Submit Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">CSR</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Frequently Asked Questions</a></li>
+          <li><a href="#">Digital Marketing FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Webstories</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-phone-alt"></i>
+            Call Us.<br />
+            +91 11 - 4504 7445<br />
+            +919910258463
+          </div>
+          <div>
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp.<br />
+            +919910258463
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            Location.<br />
+            S-89, 2nd Floor,<br />
+            Manish Global Mall,<br />
+            Sector -22,<br />
+            Dwarka,<br />
+            New Delhi - 110075, India
+          </div>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Our Specialized Services</h3>
+        <ul>
+          <li><a href="#">Portfolio Website Designing</a></li>
+          <li><a href="#">Website Maintenance Services</a></li>
+          <li><a href="#">Landing Page Web Designing</a></li>
+          <li><a href="#">Blog &amp; News Website Designing</a></li>
+          <li><a href="#">Dynamic Website Designing</a></li>
+          <li><a href="#">Company Profile Design</a></li>
+          <li><a href="#">Web Page Speed Optimization</a></li>
+          <li><a href="#">Web Application Development</a></li>
+          <li><a href="#">PPC Ads Services</a></li>
+          <li><a href="#">Mobile App Development</a></li>
+          <li><a href="#">Market Place Cataloging</a></li>
+          <li><a href="#">Search Engine Optimization</a></li>
+          <li><a href="#">Google My Business Promotion</a></li>
+          <li><a href="#">Video Production Services</a></li>
+          <li><a href="#">Brand Development &amp; Strategy</a></li>
+          <li><a href="#">Multi Vendor Ecommerce</a></li>
+          <li><a href="#">CMS Web Development</a></li>
+          <li><a href="#">Content Marketing Services</a></li>
+          <li><a href="#">Social Media Marketing</a></li>
+          <li><a href="#">Custom Website Designing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- WhatsApp Icon -->
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/918920189648" target="_blank">
+        <img
+          src="https://storage.googleapis.com/a1aa/image/2vbyXjKKDkLGPVhbRwPcHfLe45YQwqrrZ29R4lmeob5xqwOoA.jpg"
+          alt="WhatsApp icon"
+        />
+      </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
