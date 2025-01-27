@@ -191,6 +191,12 @@ body {
   width: 250px;
   text-align: center;
   margin: 5px;
+  cursor: pointer;
+}
+
+.tech-item-img{
+  height: auto;
+  width: auto;
 }
 
 .service-card img {
@@ -302,13 +308,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 455px){
-  .faq-item {
-    padding: 8px;
-    margin: 6px 0;
-    width: 200px;
-  }
-}
 
 #capabilities {
   margin: 0;
@@ -340,6 +339,13 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 800px;
+}
+@media only screen and (max-width: 455px){
+  .faq-item {
+    padding: 8px;
+    margin: 6px 0;
+    width: 200px;
+  }
 }
 .faq-item:hover {
   background-color: #d4e6f9;
@@ -527,6 +533,7 @@ body {
   overflow: hidden;
   width: 300px;
   text-align: center;
+  cursor: pointer;
 }
 
 .card img {
