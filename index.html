@@ -24,12 +24,15 @@
   </head>
   <body>
     <div class="header">
-      <img
-        alt="Company Logo"
-        height="50"
-        src="https://storage.googleapis.com/a1aa/image/PRiFp25Dm46MNRPZKfE3NTQ7thsy8ZexsuGrEuNcFvieEwOoA.jpg"
-        width="150"
-      />
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img
+          alt="Company Logo"
+          height="50"
+          src="https://storage.googleapis.com/a1aa/image/PRiFp25Dm46MNRPZKfE3NTQ7thsy8ZexsuGrEuNcFvieEwOoA.jpg"
+          width="150"
+        />
+        <h1> The Programmers House</h1>
+      </div>
       <div class="nav">
         <a onclick="showContent('home')">Home</a>
         <a onclick="showContent('about')">About Us</a>
@@ -89,17 +92,6 @@
           />
           <div class="card-title">Web Designing Services</div>
         </div>
-        <!-- <div class="card dropdown">
-        <div class="dropdown-title">Web Application Development</div>
-        <div class="dropdown-content">
-          <a href="#">Web Application Development</a>
-          <a href="#">eCommerce Web Development</a>
-          <a href="#">Mobile App Development</a>
-          <a href="#">Custom CMS Development</a>
-          <a href="#">CMS Web Development</a>
-          <a href="#">Multi Vendor Ecommerce</a>
-        </div>
-      </div> -->
         <div class="card">
           <img
             alt="Illustration of business branding services"
@@ -269,6 +261,12 @@
             width="250"
           />
           <div class="description">Web Designing Services</div>
+          <div style="display: none" class="detail">
+            Web Designing Services create visually appealing and user-friendly
+            websites that reflect a brand's identity. They focus on responsive
+            layouts, smooth navigation, and engaging designs for an optimal user
+            experience across devices.
+          </div>
         </div>
         <div class="service-card">
           <img
@@ -319,75 +317,47 @@
         </div>
         <div class="tech-grid">
           <div class="tech-item">
-            <img
-              alt="HTML5 Logo"
-              height="100"
-              src="./src/html.jpg"
-              width="200"
-            />
+            <img alt="HTML5 Logo" src="./src/html.jpg" />
             <p>HTML5</p>
           </div>
           <div class="tech-item">
-            <img
-              alt="CSS3 Logo"
-              height="100"
-              src="./src/css.jpg"
-              width="200"
-            />
+            <img alt="CSS3 Logo" src="./src/css.jpg" />
             <p>CSS3</p>
           </div>
           <div class="tech-item">
-            <img
-              alt="MySQL Logo"
-              height="100"
-              src="./src/sql.jpg"
-              width="200"
-            />
+            <img alt="MySQL Logo" src="./src/sql.jpg" />
             <p>MySQL</p>
           </div>
           <div class="tech-item">
             <img
+              class="tech-item-img"
               alt="JavaScript Logo"
-              height="100"
               src="./src/javascript.jpg"
-              width="200"
             />
             <p>JavaScript</p>
           </div>
           <div class="tech-item">
-            <img
-              alt="git Logo"
-              height="100"
-              src="./src/git.jpg"
-              width="200"
-            />
+            <img class="tech-item-img" alt="git Logo" src="./src/git.jpg" />
             <p>git</p>
           </div>
           <div class="tech-item">
             <img
+              class="tech-item-img"
               alt="Express js Logo"
-              height="100"
               src="./src/express.jpg"
-              width="200"
             />
             <p>Express js</p>
           </div>
           <div class="tech-item">
             <img
+              class="tech-item-img"
               alt="Bootstrap Logo"
-              height="100"
               src="./src/bootstrap.jpg"
-              width="200"
             />
             <p>Bootstrap</p>
           </div>
           <div class="tech-item">
-            <img
-              alt="Java Logo"
-              height="100"
-              src="./src/java.jpg"
-              width="200"
-            />
+            <img class="tech-item-img" alt="Java Logo" src="./src/java.jpg" />
             <p>Java</p>
           </div>
         </div>
@@ -480,11 +450,7 @@
       <div class="container">
         <div class="contact-info">
           <div>
-            <img
-              alt="Phone icon"
-              src="./src/call.jpg"
-              class="feed-img"
-            />
+            <img alt="Phone icon" src="./src/call.jpg" class="feed-img" />
             <p class="title">Call Us.</p>
             <p>+91 11 - 4504 7445</p>
             <p>+918920189648</p>
@@ -499,11 +465,7 @@
             <p>+918920189648</p>
           </div>
           <div>
-            <img
-              alt="Email icon"
-              src="./src/email.jpg"
-              class="feed-img"
-            />
+            <img alt="Email icon" src="./src/email.jpg" class="feed-img" />
             <p class="title">Email.</p>
             <p>jaiswalmahesh246@gmail.com</p>
           </div>
