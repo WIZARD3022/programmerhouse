@@ -604,6 +604,17 @@ button {
   margin-right: 10px;
 }
 
+#video{
+  width: 650px;
+  background-color: black;
+  height: auto;
+}
+@media (max-width: 400px) {
+  #video{
+    width: 400px;
+  }
+}
+
 /* Services Section Styles */
 .services-container {
   display: flex;
@@ -742,7 +753,7 @@ button {
 }
 .card-web-home-more * {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 @media (max-width: 768px) {
   .card-web-home-more {
@@ -792,11 +803,11 @@ button {
     flex-direction: column;
     transform: scale(0.75);
     padding: 5px;
+    align-items: center
   }
 
   .home-text-content,
   .image-content {
-    max-width: 100%;
     padding: 5px;
   }
 
