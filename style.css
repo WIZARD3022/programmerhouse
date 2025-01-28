@@ -765,6 +765,9 @@ button {
   .card-web-home-more {
       width: 80%;
   }
+  .card{
+    width: auto;
+  }
 }
 
 @media (max-width: 768px) {
