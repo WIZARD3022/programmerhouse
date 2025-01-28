@@ -9,31 +9,23 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="header">
-      <div style="display: flex; align-items: center; gap: 5px;">
+      <div style="display: flex; align-items: center; gap: 5px">
         <img
           alt="Company Logo"
           height="50"
           src="https://storage.googleapis.com/a1aa/image/PRiFp25Dm46MNRPZKfE3NTQ7thsy8ZexsuGrEuNcFvieEwOoA.jpg"
           width="150"
         />
-        <h1> The Programmers House</h1>
+        <h1>The Programmers House</h1>
       </div>
-      <div class="nav">
+      <div class="nav lap">
         <a onclick="showContent('home')">Home</a>
         <a onclick="showContent('about')">About Us</a>
         <a onclick="showContent('csr')">CSR</a>
@@ -41,17 +33,29 @@
         <a onclick="showContent('capabilities')">Our Capabilities</a>
         <a onclick="showContent('blog')">Blog</a>
         <a onclick="showContent('faq')">FAQ's</a>
-        <a onclick="showContent('careers')">Careers</a>
         <a onclick="showContent('contact')">Contact Us</a>
       </div>
+      <div class="nav mob">
+        <button style="margin: 0; padding: 0" onclick="nav_display()">
+          <img src="./src/menu.apng" alt="" />
+        </button>
+      </div>
+    </div>
+    <div class="nav-opt" id="options">
+      <a onclick="showContent('home')">Home</a>
+      <a onclick="showContent('about')">About Us</a>
+      <a onclick="showContent('csr')">CSR</a>
+      <a onclick="showContent('services')">Services</a>
+      <a onclick="showContent('capabilities')">Our Capabilities</a>
+      <a onclick="showContent('blog')">Blog</a>
+      <a onclick="showContent('faq')">FAQ's</a>
+      <a onclick="showContent('careers')">Careers</a>
+      <a onclick="showContent('contact')">Contact Us</a>
     </div>
 
     <!-- Home Content -->
     <div id="home" class="content active">
       <div class="home-container">
-        <!-- <div class="image-content">
-        <img alt="Illustration of web development and designing marketing tools" src="https://storage.googleapis.com/a1aa/image/RkebdPZ1wfntykFAAVvjtywSN4hPftIeyuW5FwtMNfU0e14BF.jpg"/>
-      </div> -->
         <div class="home-text-content">
           <h1>
             <span style="font-size: 80px">Web</span>
@@ -83,7 +87,7 @@
 
       <!-- Services Section -->
       <div class="services-container">
-        <div class="card">
+        <div onclick="showContent('home-web-more')" class="card">
           <img
             alt="Illustration of web designing services"
             height="200"
@@ -92,7 +96,7 @@
           />
           <div class="card-title">Web Designing Services</div>
         </div>
-        <div class="card">
+        <div onclick="showContent('home-sign-more')" class="card">
           <img
             alt="Illustration of business branding services"
             height="200"
@@ -101,7 +105,7 @@
           />
           <div class="card-title">Digital Signature</div>
         </div>
-        <div class="card">
+        <div onclick="showContent('home-card-more')" class="card">
           <img
             alt="Illustration of business branding services"
             height="200"
@@ -110,7 +114,7 @@
           />
           <div class="card-title">Card Designing</div>
         </div>
-        <div class="card">
+        <div onclick="showContent('home-app-more')" class="card">
           <img
             alt="Illustration of digital marketing services"
             height="200"
@@ -127,94 +131,114 @@
     <!-- About Us Content -->
     <div id="about" class="content">
       <!-- Why Choose Us Section -->
-      <div class="why-choose-us-header">
-        <div class="text-content" style="color: black">
-          <h2 style="font-size: 70px">About Us</h2>
-          <p>
-            We are a company dedicated to innovation, sustainability, and making
-            the world a better place. Learn about our journey and mission.
-          </p>
+      <div>
+        <div class="why-choose-us-header">
+          <div class="text-content" style="color: black">
+            <h2 style="font-size: 70px">About Us</h2>
+          </div>
+          <div class="header-body-about">
+            <img
+              alt="Header image with various programming icons and a person working on a computer"
+              height="100"
+              src="./src/about.jpg"
+              width="400"
+            />
+            <p>
+              Our website represents a dynamic company driven by innovation,
+              sustainability, and a mission to make the world a better place. It
+              showcases your expertise in providing a wide range of digital
+              services tailored to modern needs. From developing stunning and
+              functional websites to designing creative cards, your team excels
+              at crafting unique digital experiences. You also specialize in
+              creating secure and convenient digital signatures, streamlining
+              business workflows. App development is another forte, helping
+              clients bring their ideas to life with intuitive and user-friendly
+              solutions. Sustainability lies at the core of your work, ensuring
+              eco-friendly practices in all your projects. With a focus on
+              creativity and quality, your company delivers personalized
+              services that cater to businesses and individuals alike. Your
+              journey reflects a commitment to empowering clients with
+              cutting-edge technology and designs. Every project you undertake
+              aims to inspire, innovate, and contribute to a sustainable digital
+              future.
+            </p>
+          </div>
         </div>
-        <img
-          alt="Header image with various programming icons and a person working on a computer"
-          height="100"
-          src="https://storage.googleapis.com/a1aa/image/inIcRuykVE7TBJ2e7hqbDCYRosEizDwTOCFI7Nk3NKXDWxDKA.jpg"
-          width="400"
-        />
-      </div>
-      <div class="why-choose-us-container">
-        <div class="why-choose-us-card">
-          <img
-            alt="Shield icon"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/CTNamONEf9xeJUFr6V2Ul8XSpAwC3pnwfL0QJ0MMZrYPYFPoA.jpg"
-            width="50"
-          />
-          <h3>We Value Integrity</h3>
-          <p>
-            We believe in doing business with uprightness, truthfulness and a
-            sincere heart for others.
-          </p>
-        </div>
-        <div class="why-choose-us-card">
-          <img
-            alt="Computer icon"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/OuxFAzo7W4KwJZDYgqKXYptqHEqLY4L8nDfVfpefhCpNwKegC.jpg"
-            width="50"
-          />
-          <h3>Code That Works</h3>
-          <p>
-            We ourselves hand code all sites using latest technology and
-            cross-compatibility.
-          </p>
-        </div>
-        <div class="why-choose-us-card">
-          <img
-            alt="Deadline icon"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/emm1pYi4C3QVSKaSzcvufFP5eqpelgmxmLmvAC5YPnbUwKegC.jpg"
-            width="50"
-          />
-          <h3>Never Miss Deadlines</h3>
-          <p>
-            We know that time is money in business, so we apply strict deadlines
-            and adhere to them.
-          </p>
-        </div>
-        <div class="why-choose-us-card">
-          <img
-            alt="Design icon"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/1emddTzGZEWnJig0eSBcIaSfcdPqWqeAGIHNr3tAxNakwKegC.jpg"
-            width="50"
-          />
-          <h3>Outstanding Designs</h3>
-          <p>
-            Our developers and designers first analyze your target audiences so.
-          </p>
-        </div>
-        <div class="why-choose-us-card">
-          <img
-            alt="Experience icon"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/3aLsfWZHKCVqCCWKOmTmX8sAjEK70M61LTPjecynIgyKsiHUA.jpg"
-            width="50"
-          />
-          <h3>Extensive experience</h3>
-          <p>
-            100+ projects in various sector companies have been successfully.
-          </p>
-        </div>
-        <div class="why-choose-us-card">
-          <img
-            alt="Support icon"
-            height="50"
-            src="https://storage.googleapis.com/a1aa/image/KBfCWUew3UruMEghWnHMdHjeTbyRhogOeKSN6UOdejRhgV8gC.jpg"
-            width="50"
-          />
-          <h3>Dedicated support</h3>
-          <p>Dedicated teams of professionals that advise and monitor the.</p>
+        <div class="why-choose-us-container">
+          <div class="why-choose-us-card">
+            <img
+              alt="Shield icon"
+              height="50"
+              src="https://storage.googleapis.com/a1aa/image/CTNamONEf9xeJUFr6V2Ul8XSpAwC3pnwfL0QJ0MMZrYPYFPoA.jpg"
+              width="50"
+            />
+            <h3>We Value Integrity</h3>
+            <p>
+              We believe in doing business with uprightness, truthfulness and a
+              sincere heart for others.
+            </p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="Computer icon"
+              height="50"
+              src="https://storage.googleapis.com/a1aa/image/OuxFAzo7W4KwJZDYgqKXYptqHEqLY4L8nDfVfpefhCpNwKegC.jpg"
+              width="50"
+            />
+            <h3>Code That Works</h3>
+            <p>
+              We ourselves hand code all sites using latest technology and
+              cross-compatibility.
+            </p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="Deadline icon"
+              height="50"
+              src="https://storage.googleapis.com/a1aa/image/emm1pYi4C3QVSKaSzcvufFP5eqpelgmxmLmvAC5YPnbUwKegC.jpg"
+              width="50"
+            />
+            <h3>Never Miss Deadlines</h3>
+            <p>
+              We know that time is money in business, so we apply strict
+              deadlines and adhere to them.
+            </p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="Design icon"
+              height="50"
+              src="https://storage.googleapis.com/a1aa/image/1emddTzGZEWnJig0eSBcIaSfcdPqWqeAGIHNr3tAxNakwKegC.jpg"
+              width="50"
+            />
+            <h3>Outstanding Designs</h3>
+            <p>
+              Our developers and designers first analyze your target audiences
+              so.
+            </p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="Experience icon"
+              height="50"
+              src="https://storage.googleapis.com/a1aa/image/3aLsfWZHKCVqCCWKOmTmX8sAjEK70M61LTPjecynIgyKsiHUA.jpg"
+              width="50"
+            />
+            <h3>Extensive experience</h3>
+            <p>
+              100+ projects in various sector companies have been successfully.
+            </p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="Support icon"
+              height="50"
+              src="https://storage.googleapis.com/a1aa/image/KBfCWUew3UruMEghWnHMdHjeTbyRhogOeKSN6UOdejRhgV8gC.jpg"
+              width="50"
+            />
+            <h3>Dedicated support</h3>
+            <p>Dedicated teams of professionals that advise and monitor the.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -360,6 +384,286 @@
             <img class="tech-item-img" alt="Java Logo" src="./src/java.jpg" />
             <p>Java</p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    ffffffffffffffffffffffffffffffff
+    ffffffffffffffffffffffffffffffff -->
+
+    <div id="home-web-more"  class="content">
+      <div class="container-web-home-more">
+        <a href="#custom-web-design" onclick="showService('custom-web-design')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
+            <h3>Custom Website Designing</h3>
+            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+          </div>
+        </a>
+        <a href="#web-app-development" onclick="showService('web-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
+            <h3>Web Application Development</h3>
+            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+          </div>
+        </a>
+        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
+            <h3>eCommerce Web Development</h3>
+            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+          </div>
+        </a>
+        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
+            <h3>Mobile App Development</h3>
+            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+          </div>
+        </a>
+        <a href="#digital-marketing" onclick="showService('digital-marketing')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
+            <h3>Digital Marketing Services</h3>
+            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+          </div>
+        </a>
+      </div>
+      
+    
+      <!-- Detailed Service Section -->
+      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
+        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
+        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Custom Website Designing</h1>
+          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+        </div>
+        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Web Application Development</h1>
+          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+        </div>
+        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>eCommerce Web Development</h1>
+          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+        </div>
+        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Mobile App Development</h1>
+          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+        </div>
+        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Digital Marketing Services</h1>
+          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    ssssssssssssssssssssssss
+    sssssssssssssssssssssssss -->
+
+    <div id="home-app-more"  class="content">
+      <div class="container-web-home-more">
+        <a href="#custom-web-design" onclick="showService('custom-web-design')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
+            <h3>Custom app Designing</h3>
+            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+          </div>
+        </a>
+        <a href="#web-app-development" onclick="showService('web-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
+            <h3>Web Application Development</h3>
+            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+          </div>
+        </a>
+        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
+            <h3>eCommerce Web Development</h3>
+            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+          </div>
+        </a>
+        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
+            <h3>Mobile App Development</h3>
+            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+          </div>
+        </a>
+        <a href="#digital-marketing" onclick="showService('digital-marketing')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
+            <h3>Digital Marketing Services</h3>
+            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+          </div>
+        </a>
+      </div>
+      
+    
+      <!-- Detailed Service Section -->
+      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
+        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
+        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Custom app Designing</h1>
+          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+        </div>
+        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Web Application Development</h1>
+          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+        </div>
+        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>eCommerce Web Development</h1>
+          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+        </div>
+        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Mobile App Development</h1>
+          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+        </div>
+        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Digital Marketing Services</h1>
+          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    ttttttttttttttttttttttttttttt
+    tttttttttttttttttttttttttttttttt -->
+
+    <div id="home-sign-more"  class="content">
+      <div class="container-web-home-more">
+        <a href="#custom-web-design" onclick="showService('custom-web-design')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
+            <h3>Custom Signature Designing</h3>
+            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+          </div>
+        </a>
+        <a href="#web-app-development" onclick="showService('web-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
+            <h3>Web Application Development</h3>
+            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+          </div>
+        </a>
+        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
+            <h3>eCommerce Web Development</h3>
+            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+          </div>
+        </a>
+        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
+            <h3>Mobile App Development</h3>
+            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+          </div>
+        </a>
+        <a href="#digital-marketing" onclick="showService('digital-marketing')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
+            <h3>Digital Marketing Services</h3>
+            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+          </div>
+        </a>
+      </div>
+      
+    
+      <!-- Detailed Service Section -->
+      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
+        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
+        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Custom sign Designing</h1>
+          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+        </div>
+        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Web Application Development</h1>
+          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+        </div>
+        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>eCommerce Web Development</h1>
+          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+        </div>
+        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Mobile App Development</h1>
+          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+        </div>
+        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Digital Marketing Services</h1>
+          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    fofofoffofofofofofo
+    fooffofofofofofofofofofofo -->
+
+    <div id="home-card-more"  class="content">
+      <div class="container-web-home-more">
+        <a href="#custom-web-design" onclick="showService('custom-web-design')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
+            <h3>Custom Card Designing</h3>
+            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+          </div>
+        </a>
+        <a href="#web-app-development" onclick="showService('web-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
+            <h3>Web Application Development</h3>
+            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+          </div>
+        </a>
+        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
+            <h3>eCommerce Web Development</h3>
+            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+          </div>
+        </a>
+        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
+            <h3>Mobile App Development</h3>
+            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+          </div>
+        </a>
+        <a href="#digital-marketing" onclick="showService('digital-marketing')">
+          <div class="card-web-home-more">
+            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
+            <h3>Digital Marketing Services</h3>
+            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+          </div>
+        </a>
+      </div>
+      
+    
+      <!-- Detailed Service Section -->
+      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
+        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
+        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Custom card Designing</h1>
+          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+        </div>
+        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Web Application Development</h1>
+          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+        </div>
+        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>eCommerce Web Development</h1>
+          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+        </div>
+        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Mobile App Development</h1>
+          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+        </div>
+        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
+          <h1>Digital Marketing Services</h1>
+          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
         </div>
       </div>
     </div>
