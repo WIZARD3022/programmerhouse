@@ -631,7 +631,7 @@ button {
   width: 300px;
   text-align: center;
   cursor: pointer;
-  height: 360px;
+  height: 370px;
 }
 .card:hover {
   transform: scale(1.05);
