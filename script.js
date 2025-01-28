@@ -4,16 +4,17 @@ function showContent(section) {
     document.getElementById(section).classList.add('active');
 }
 
-function openoption(params) {
-    if (params == 1) {
-        let target = document.getElementById('nav-open').outerHTML;
-        target = `<a id="nav-close" onclick="openoption(0)"><img src="./src/close.apng" alt="Close"/></a>`
-    }
-    else {
-        let target = document.getElementById('nav-close').outerHTML;
-        target = `<a id="nav-close" onclick="openoption(1)"><img src="./src/menu.apng" alt="Menu"/></a>`
+function nav_display() {
+    const target = document.getElementById('options');
+    const currentDisplay = window.getComputedStyle(target).display;
+
+    if (currentDisplay === "none") {
+        target.style.display = "flex";
+    } else {
+        target.style.display = "none";
     }
 }
+
 
 function display() {
     const videoElement = document.querySelector('#video');
@@ -150,13 +151,13 @@ document.addEventListener("DOMContentLoaded", () => {
     serviceCards.forEach((card) => {
         // Create a "More" link element
         const moreLink = document.createElement("a");
-        moreLink.innerText = "More";
-        moreLink.href = "#"; // You can update this URL as needed
+        moreLink.innerText = "Click for more info";
+        // moreLink.href = "#"; // You can update this URL as needed
         moreLink.style.position = "absolute";
         moreLink.style.top = "10px";
         moreLink.style.right = "10px";
         moreLink.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-        moreLink.style.color = "white";
+        moreLink.style.color = "rgba(46, 103, 248, 0.93)";
         moreLink.style.padding = "5px 10px";
         moreLink.style.borderRadius = "5px";
         moreLink.style.textDecoration = "none";
@@ -213,3 +214,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+function showService(service) {
+    document.getElementById("services-details-web-home-more").style.display = "block";
+    const details = document.querySelectorAll(".service-detail-web-home-more");
+    details.forEach(function (detail) {
+        detail.style.display = "none";
+    });
+    document.getElementById(service + "-detail").style.display = "block";
+}
+
+function hideService() {
+    document.getElementById("services-details-web-home-more").style.display = "none";
+}
