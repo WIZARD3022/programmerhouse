@@ -36,7 +36,7 @@
         <a onclick="showContent('contact')">Contact Us</a>
       </div>
       <div class="nav mob">
-        <button style="margin: 0; padding: 0" onclick="nav_display()">
+        <button id="nav-control" style="margin: 0; padding: 0" onclick="nav_display()">
           <img src="./src/menu.apng" alt="" />
         </button>
       </div>
@@ -71,10 +71,7 @@
             >
           </div>
         </div>
-        <div
-          id="video"
-          class="notshow"
-        >
+        <div id="video" class="notshow">
           <video
             style="height: 100%; width: 100%"
             controls
@@ -390,68 +387,585 @@
     ffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffff -->
 
-    <div id="home-web-more"  class="content">
-      <div class="container-web-home-more">
+    <div id="home-web-more" class="content">
+      <div class="container-web-home-more" id="container-web-home-more-id">
         <a href="#custom-web-design" onclick="showService('custom-web-design')">
           <div class="card-web-home-more">
-            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
-            <h3>Custom Website Designing</h3>
-            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+            <img
+              alt="Illustration of a custom website design"
+              src="./src/web development.jpg"
+            />
+            <h3>1. Website Development</h3>
+            <p>
+              "Step into a beautifully designed digital experience tailored just
+              for you! Our website ensures ease of navigation, stunning visuals,
+              and compatibility with every device you use."
+            </p>
           </div>
         </a>
-        <a href="#web-app-development" onclick="showService('web-app-development')">
+        <a
+          href="#web-app-development"
+          onclick="showService('web-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
-            <h3>Web Application Development</h3>
-            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+            <img
+              alt="Illustration of web application development"
+              src="./src/web backend.jpg"
+            />
+            <h3>2. Backend Development</h3>
+            <p>
+              "Enjoy lightning-fast speeds and flawless performance every time
+              you visit. Our technology works behind the scenes to deliver a
+              smooth and secure experience."
+            </p>
           </div>
         </a>
-        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+        <a
+          href="#ecommerce-development"
+          onclick="showService('ecommerce-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
-            <h3>eCommerce Web Development</h3>
-            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+            <img
+              alt="Illustration of eCommerce web development"
+              src="./src/web debug.jpg"
+            />
+            <h3>3. Debugging and Maintenance</h3>
+            <p>
+              "We’re committed to giving you a flawless experience, constantly
+              improving and updating to meet your needs."
+            </p>
           </div>
         </a>
-        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+        <a
+          href="#mobile-app-development"
+          onclick="showService('mobile-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
-            <h3>Mobile App Development</h3>
-            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+            <img
+              alt="Illustration of mobile app development"
+              src="./src/web database.jpg"
+            />
+            <h3>4. Database Management</h3>
+            <p>
+              "Your experience matters to us! Our smart system keeps track of
+              your preferences to make each visit better than the last."
+            </p>
           </div>
         </a>
         <a href="#digital-marketing" onclick="showService('digital-marketing')">
           <div class="card-web-home-more">
-            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
-            <h3>Digital Marketing Services</h3>
-            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+            <img
+              alt="Illustration of digital marketing services"
+              src="./src/web collab.jpg"
+            />
+            <h3>5. Collaboration and Integration</h3>
+            <p>
+              "Everything you need is right here. From quick payments to live
+              support, we’ve integrated powerful tools to make your life
+              easier."
+            </p>
           </div>
         </a>
       </div>
-      
-    
+
       <!-- Detailed Service Section -->
-      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
-        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
-        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
-          <h1>Custom Website Designing</h1>
-          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+      <div id="services-details-web-home-more">
+        <a
+          href="#"
+          onclick="hideService()"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #b23b3b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+          "
+          >Back to Services</a
+        >
+        <div
+          id="custom-web-design-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
+          <h1>Website Development</h1>
+          <img src="./src/web development.jpg" alt="" />
+          <ol>
+            <li>
+              <div style="font-style: italic">
+                "Enjoy a clean and modern design that makes browsing effortless
+                and enjoyable."
+              </div>
+              <p>
+                A clean and modern design means that the website avoids
+                unnecessary clutter, making it easy for customers to focus on
+                what matters most. A minimalist approach ensures that content is
+                presented in an organized, visually appealing manner.
+                High-quality images, consistent fonts, and well-balanced colors
+                create a professional look that builds trust with visitors. A
+                well-structured layout means no distractions, no confusion—just
+                a smooth and enjoyable experience from start to finish. Why does
+                this matter? A visually pleasing website keeps visitors engaged
+                longer, increasing the chances of converting them into
+                customers. Example for Customers: "We keep it simple yet
+                stunning—our modern design makes it easy for you to find exactly
+                what you need, without unnecessary distractions!"
+              </p>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "Find exactly what you’re looking for in just a few clicks with
+                our intuitive layout and menu design."
+              </div>
+              <p>
+                The navigation menu is structured logically, so visitors don’t
+                have to waste time searching for what they need. Clear
+                categories and search functionality allow users to find
+                products, services, or information in seconds. Pages are
+                designed to load quickly and efficiently, reducing frustration
+                and increasing user satisfaction. Logical content flow ensures
+                that important sections (products, services, contact
+                information) are easily accessible. A well-designed menu and
+                layout increase conversion rates, as customers are more likely
+                to complete actions (purchases, inquiries, sign-ups). Example
+                for Customers: "No more endless searching! Our smart layout
+                guides you directly to what you need, saving you time and
+                effort."
+              </p>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "Our website adapts perfectly to your screen size, whether
+                you’re on a mobile phone, tablet, or desktop."
+              </div>
+              <p>
+                Responsive design ensures that no matter what device customers
+                use, they get the best possible experience. The layout
+                automatically adjusts to fit different screen sizes, ensuring
+                everything remains clear, readable, and functional. Buttons,
+                text, and images are scaled properly, so customers don’t have to
+                zoom in or struggle to read small text. Mobile users won’t
+                experience slow load times or broken layouts—everything works
+                smoothly and efficiently. With more people browsing on
+                smartphones, mobile-friendliness is crucial for retaining
+                visitors and boosting engagement. Example for Customers: "Switch
+                between your phone, tablet, or laptop with ease—our website
+                looks perfect on every device, ensuring a seamless experience
+                everywhere!"
+              </p>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "We’ve designed this site to feel like your personal
+                assistant—efficient and user-friendly."
+              </div>
+              <p>
+                Every feature is designed to anticipate what users need,
+                creating a more personalized and efficient experience. Smart
+                recommendations, quick search, and easy navigation make browsing
+                effortless. The website remembers user preferences, helping them
+                quickly return to past searches, favorite products, or saved
+                information. Fast-loading pages, clear call-to-action buttons,
+                and interactive elements make every interaction smooth and
+                hassle-free. A well-designed website saves customers time and
+                effort, just like a great personal assistant! Example for
+                Customers: "Think of our website as your personal
+                assistant—quick, smart, and always ready to help you find
+                exactly what you need!"
+              </p>
+            </li>
+          </ol>
         </div>
-        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
-          <h1>Web Application Development</h1>
-          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+        <div
+          id="web-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
+        <h1>Backend Development</h1>
+          <img src="./src/web backend.jpg" alt="" />
+          <ol>
+            <li>
+              <div style="font-style: italic">
+                "We ensure that every page loads in a flash so you won’t have to
+                wait!"
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> A slow-loading website can
+                  frustrate visitors and make them leave before even exploring
+                  what you offer. Speed is crucial for keeping customers engaged
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> We use advanced
+                  cachingtechniques to store frequently accessed data, ensuring
+                  pagesload instantly. Our servers are optimized with CDN
+                  (ContentDelivery Network) technology, which means website
+                  content isdelivered from the closest server to your location
+                  for fasteraccess. We compress images and optimize code to
+                  reduce filesizes without compromising quality, making
+                  everything loadfaster. Our system minimizes unnecessary
+                  background processes,so your experience remains smooth and
+                  uninterrupted.
+                </div>
+                <div>
+                  <b>📌 WhatThis Means for You:</b> No more waiting for pages to
+                  load—get theinformation you need instantly! Enjoy a seamless
+                  browsingexperience, even on slower internet connections.
+                  Faster pagespeed means better search rankings, helping more
+                  people discoverour website.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "Our robust systems handle high traffic effortlessly, ensuring
+                your experience is never interrupted."
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> Imagine visiting a website during
+                  a sale or a peak time, only to find it slow or completely
+                  down. A well-built system can handle thousands of users at
+                  once without any lag.
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> We use load balancing
+                  technology, which distributes traffic efficiently so that no
+                  single server gets overwhelmed. Our servers are scalable,
+                  meaning they can expand automatically to accommodate higher
+                  demand when needed. We use asynchronous processing, allowing
+                  multiple tasks to run smoothly without delays. Our site is
+                  built with efficient database queries, ensuring quick
+                  retrieval of information without overloading the system.
+                </div>
+                <div>
+                  <b>📌 What This Means for You:</b> No downtime, even during
+                  peak hours or high-traffic events. A stable, reliable website
+                  experience no matter how many visitors are online. Faster
+                  response times, meaning you can shop, browse, or interact
+                  without frustration.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "Data security is our top priority, so you can browse, shop, or
+                interact with confidence."
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> With cyber threats on the rise,
+                  protecting customer data is essential. Users want to feel safe
+                  when browsing, entering personal details, or making purchases.
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> We use SSL encryption to secure
+                  all data transfers, ensuring that any information you enter
+                  remains private. Our platform undergoes regular security
+                  audits to identify and fix vulnerabilities before they become
+                  threats. We implement multi-layered authentication, making
+                  unauthorized access nearly impossible. Our payment systems
+                  comply with PCI DSS (Payment Card Industry Data Security
+                  Standard), ensuring safe transactions.
+                </div>
+                <div>
+                  <b>📌 What This Means for You:</b> Your personal information
+                  is completely safe—no risk of leaks or unauthorized access.
+                  Secure browsing means you can interact with the website freely
+                  without worry. Hassle-free and protected payments give you
+                  peace of mind when making transactions.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "We use the latest technology to create a solid foundation for
+                everything you see on our website."
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> Technology evolves quickly, and
+                  outdated websites can become slow, glitchy, or incompatible
+                  with modern devices. A strong technological foundation ensures
+                  long-term reliability.
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> Our site is built using modern
+                  frameworks like React, Angular, and Vue.js for a smooth and
+                  interactive experience. We use progressive web app (PWA)
+                  technology, which allows our site to function like an app on
+                  mobile devices. AI-driven analytics help us understand
+                  customer behavior and continuously improve your experience.
+                  Our website is optimized for SEO (Search Engine Optimization),
+                  ensuring it ranks higher in search results so you can find us
+                  easily.
+                </div>
+                <div>
+                  <b>📌 What This Means for You:</b> A future-proof website that
+                  stays fast, secure, and functional no matter how technology
+                  evolves. A smooth user experience with the latest innovations
+                  in web development. Easy navigation and access to information,
+                  keeping you engaged and satisfied.
+                </div>
+              </div>
+            </li>
+          </ol>
         </div>
-        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
-          <h1>eCommerce Web Development</h1>
-          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+        <div
+          id="ecommerce-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
+          <h1>Debugging and Maintenance</h1>
+          <img src="./src/web debug.jpg" alt="" />
+          <ol>
+            <li>
+              <div>
+                "Behind the scenes, we’re always fixing bugs and making updates
+                to ensure everything runs smoothly."
+              </div>
+              <ul>
+                <li>
+                  "You may not see it, but our team works tirelessly to improve
+                  your browsing experience every single day."
+                </li>
+                <li>
+                  "Just like a well-oiled machine, our website undergoes
+                  continuous fine-tuning to eliminate errors and glitches."
+                </li>
+                <li>
+                  "Every line of code is checked and optimized to ensure our
+                  platform remains stable, fast, and responsive."
+                </li>
+                <li>
+                  "We believe in perfection, which is why our developers
+                  constantly test and refine every feature to give you the best
+                  experience."
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                "We monitor our site regularly to spot and fix issues before you
+                even notice them!"
+              </div>
+              <ul>
+                <li>
+                  "Think of us as your digital guardians—always watching, always
+                  improving, so you never have to worry about technical
+                  hiccups."
+                </li>
+                <li>
+                  "We run automated scans and real-time performance checks to
+                  detect and resolve problems instantly."
+                </li>
+                <li>
+                  "Our system is designed to identify and correct potential
+                  issues before they impact your experience."
+                </li>
+                <li>
+                  "From loading speed to broken links, we monitor every aspect
+                  to ensure seamless navigation for you."
+                </li>
+                <li>
+                  "We take proactive action to maintain top-notch security,
+                  performance, and reliability."
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                "Got feedback? We actively listen to improve your experience
+                further."
+              </div>
+              <ul>
+                <li>
+                  "Your voice matters! We take your feedback seriously and use
+                  it to enhance our website’s functionality."
+                </li>
+                <li>
+                  "If you ever experience an issue or have a suggestion, we’re
+                  just a message away—we’re always listening!"
+                </li>
+                <li>
+                  "Our updates are driven by your needs, ensuring that every
+                  change makes your experience better and more enjoyable."
+                </li>
+                <li>
+                  "Whether it’s a new feature request or an improvement idea,
+                  your input helps shape the future of our platform."
+                </li>
+                <li>
+                  "Your satisfaction is our priority, and we constantly refine
+                  our website based on real customer insights."
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                "Our maintenance efforts ensure a secure, up-to-date website
+                that adapts to your needs over time."
+              </div>
+              <ul>
+                <li>
+                  "We don’t just build a website and leave it—we keep it
+                  evolving to stay ahead of the latest trends and technologies."
+                </li>
+                <li>
+                  "Regular maintenance ensures that our platform remains fast,
+                  secure, and aligned with industry standards."
+                </li>
+                <li>
+                  "As customer needs change, so does our website! We
+                  continuously upgrade our features to offer the best user
+                  experience."
+                </li>
+                <li>
+                  "Security updates, performance enhancements, and new
+                  functionalities are part of our commitment to keeping our
+                  website at its best."
+                </li>
+                <li>
+                  "Think of our website as a living, breathing entity—it grows,
+                  improves, and adapts to make your experience better every
+                  day."
+                </li>
+              </ul>
+            </li>
+          </ol>
         </div>
-        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
-          <h1>Mobile App Development</h1>
-          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+        <div
+          id="mobile-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
+          <h1>Database Management</h1>
+          <img src="./src/web database.jpg" alt="" />
+          <ul>
+            <li>
+              <div>
+                "Your preferences and activities are securely saved, so you
+                don’t have to start over every time you visit."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                Our website remembers your choices, such as your favorite
+                products, recently viewed items, and saved settings. This means
+                you won’t have to waste time re-entering your details or
+                searching for items again. Whether it’s your shopping cart,
+                wishlist, or selected filters, everything is stored safely for
+                your convenience. If you're a registered user, you can log in
+                from any device and continue right where you left off. We use
+                secure database technology to store your preferences while
+                maintaining strict privacy controls.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "Ever added items to your cart but had to leave? Don’t
+                worry—when you come back, your cart is right where you left it!"
+              </div>
+            </li>
+            <li>
+              <div>
+                "With personalized suggestions and easy access to past orders or
+                preferences, your experience is truly yours."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                We analyze your browsing and shopping habits to recommend
+                products and services that suit your interests. Instead of
+                seeing generic recommendations, you’ll find suggestions tailored
+                specifically to your tastes. Returning customers can quickly
+                reorder previously purchased items without searching again. If
+                you have favorite categories or frequently visited sections, our
+                system will highlight those for easy access. Personalized
+                experiences lead to faster, more enjoyable interactions with our
+                website.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "Looking for something new? Our personalized recommendations
+                help you discover products you’ll love, based on your unique
+                interests!"
+              </div>
+            </li>
+            <li>
+              <div>
+                "We analyze what customers love most to keep improving our
+                offerings and services."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                Our system continuously tracks what customers interact with the
+                most—whether it’s products, blog articles, or special offers. We
+                use this data to refine our content, improve product selection,
+                and enhance user experience. Customer feedback and usage trends
+                help us introduce new features that better serve your needs. By
+                understanding what works best, we can offer better discounts,
+                promotions, and exclusive deals. The goal is to make our website
+                more engaging and useful based on what YOU love most.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "We’re always evolving! Our website adapts based on what
+                customers enjoy the most, ensuring you get the best experience
+                possible."
+              </div>
+            </li>
+            <li>
+              <div>
+                "Our data protection measures ensure that your information is
+                always safe and private."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                We use advanced encryption and security protocols to protect
+                your personal data. Our website follows strict privacy policies,
+                ensuring that your information is never shared without your
+                consent. Secure login and authentication features help prevent
+                unauthorized access to your account. Payment transactions are
+                processed through trusted, industry-standard payment gateways to
+                keep your financial data secure. We regularly update our
+                security systems to stay ahead of potential threats.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "Your privacy is our priority! We use top-tier security to keep
+                your data safe, so you can browse and shop with confidence."
+              </div>
+            </li>
+          </ul>
         </div>
-        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
-          <h1>Digital Marketing Services</h1>
-          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
+        <div
+          id="digital-marketing-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
+          <h1>Collaboration and Integration</h1>
+          <img src="./src/web collab.jpg" alt="" />
+          <ul>
+            <li>
+              "We’ve collaborated with top designers and developers to create an
+              engaging, professional website."
+            </li>
+            <li>
+              "Integrated chat support means you’re never alone—help is always
+              just a message away!"
+            </li>
+            <li>
+              "We constantly innovate and integrate new tools to bring you the
+              latest in convenience and functionality."
+            </li>
+            <li>
+              "Our secure payment systems ensure smooth and worry-free
+              transactions every time."
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -460,68 +974,175 @@
     ssssssssssssssssssssssss
     sssssssssssssssssssssssss -->
 
-    <div id="home-app-more"  class="content">
-      <div class="container-web-home-more">
+    <div id="home-app-more" class="content">
+      <div class="container-web-home-more" id="container-web-home-more-id">
         <a href="#custom-web-design" onclick="showService('custom-web-design')">
           <div class="card-web-home-more">
-            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of a custom website design"
+              src="https://placehold.co/110x110"
+            />
             <h3>Custom app Designing</h3>
-            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+            <p>
+              Our innovative website design services speak for your business,
+              helping you make an immediate connection with your clients.
+            </p>
           </div>
         </a>
-        <a href="#web-app-development" onclick="showService('web-app-development')">
+        <a
+          href="#web-app-development"
+          onclick="showService('web-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of web application development"
+              src="https://placehold.co/110x110"
+            />
             <h3>Web Application Development</h3>
-            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+            <p>
+              With our mobile and web development services, we assist in
+              creating functional, high-performing apps and websites.
+            </p>
           </div>
         </a>
-        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+        <a
+          href="#ecommerce-development"
+          onclick="showService('ecommerce-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of eCommerce web development"
+              src="https://placehold.co/110x110"
+            />
             <h3>eCommerce Web Development</h3>
-            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+            <p>
+              Deliver a flawless shopping experience with our customized
+              e-commerce solutions tailored to your needs.
+            </p>
           </div>
         </a>
-        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+        <a
+          href="#mobile-app-development"
+          onclick="showService('mobile-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of mobile app development"
+              src="https://placehold.co/110x110"
+            />
             <h3>Mobile App Development</h3>
-            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+            <p>
+              As HTML5 experts, we build cross-platform mobile applications
+              compatible with any device or platform.
+            </p>
           </div>
         </a>
         <a href="#digital-marketing" onclick="showService('digital-marketing')">
           <div class="card-web-home-more">
-            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of digital marketing services"
+              src="https://placehold.co/110x110"
+            />
             <h3>Digital Marketing Services</h3>
-            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+            <p>
+              Boost your business with our comprehensive digital marketing
+              solutions, including SEO, social media, and content strategies.
+            </p>
           </div>
         </a>
       </div>
-      
-    
+
       <!-- Detailed Service Section -->
-      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
-        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
-        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
+      <div
+        id="services-details-web-home-more"
+        style="
+          display: none;
+          padding: 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+          background-color: #f3f4f6;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <a
+          href="#"
+          onclick="hideService()"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #b23b3b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+          "
+          >Back to Services</a
+        >
+        <div
+          id="custom-web-design-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Custom app Designing</h1>
-          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+          <p>
+            Our innovative website design services speak for your business,
+            helping you make an immediate connection with your clients. We craft
+            visually stunning websites that provide a seamless user experience,
+            making sure they are fully responsive across all devices. Our
+            designs are user-centric, focusing on both aesthetics and
+            functionality to bring your business closer to your target audience.
+          </p>
         </div>
-        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="web-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Web Application Development</h1>
-          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+          <p>
+            We specialize in developing high-performance, user-friendly web
+            applications. Our team builds scalable and secure solutions to meet
+            your business goals, using the latest technologies for seamless
+            performance across platforms.
+          </p>
         </div>
-        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="ecommerce-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>eCommerce Web Development</h1>
-          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+          <p>
+            We provide tailored e-commerce development services to enhance your
+            business. From product displays to payment gateways, we ensure that
+            your online store is optimized for sales and customer satisfaction.
+          </p>
         </div>
-        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="mobile-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Mobile App Development</h1>
-          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+          <p>
+            Our mobile app development services include creating cross-platform
+            apps that are user-friendly, feature-rich, and optimized for
+            performance, ensuring an exceptional experience on both Android and
+            iOS devices.
+          </p>
         </div>
-        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="digital-marketing-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Digital Marketing Services</h1>
-          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
+          <p>
+            We offer comprehensive digital marketing solutions that drive
+            traffic and increase visibility. Our strategies include SEO, social
+            media marketing, and content marketing, all tailored to your
+            business needs.
+          </p>
         </div>
       </div>
     </div>
@@ -530,68 +1151,171 @@
     ttttttttttttttttttttttttttttt
     tttttttttttttttttttttttttttttttt -->
 
-    <div id="home-sign-more"  class="content">
-      <div class="container-web-home-more">
+    <div id="home-sign-more" class="content">
+      <div class="container-web-home-more" id="container-web-home-more-id">
         <a href="#custom-web-design" onclick="showService('custom-web-design')">
           <div class="card-web-home-more">
-            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
-            <h3>Custom Signature Designing</h3>
-            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+            <img
+              alt="Illustration of a custom website design"
+              src="./src/sign secure.jpg"
+            />
+            <h3>1. Secure and Trusted Digital Signature Solutions</h3>
+            <p>
+              "Protect your digital transactions with our highly secure and legally recognized digital signature solutions."
+            </p>
+          </div>
           </div>
         </a>
-        <a href="#web-app-development" onclick="showService('web-app-development')">
+        <a
+          href="#web-app-development"
+          onclick="showService('web-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
-            <h3>Web Application Development</h3>
-            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+            <img
+              alt="Illustration of web application development"
+              src="./src/sign gst.jpg"
+            />
+            <h3>2. Simplify Your GST Filing with Confidence</h3>
+            <p>
+              "Experience hassle-free GST filing with our seamless digital signature services."
+            </p>
           </div>
         </a>
-        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+        <a
+          href="#ecommerce-development"
+          onclick="showService('ecommerce-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
-            <h3>eCommerce Web Development</h3>
-            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+            <img
+              alt="Illustration of eCommerce web development"
+              src="./src/sign tax.jpg"
+            />
+            <h3>3. Streamline Your Income Tax Filing Process</h3>
+            <p>
+              "Take the stress out of income tax filing.
+            </p>
           </div>
         </a>
-        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+        <a
+          href="#mobile-app-development"
+          onclick="showService('mobile-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
-            <h3>Mobile App Development</h3>
-            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+            <img
+              alt="Illustration of mobile app development"
+              src="./src/sign trade.jpg"
+            />
+            <h3>4. Effortless eTender Submissions with Digital Signatures</h3>
+            <p>
+              "Bid with ease on government and corporate eTenders.
+            </p>
           </div>
         </a>
         <a href="#digital-marketing" onclick="showService('digital-marketing')">
           <div class="card-web-home-more">
-            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
-            <h3>Digital Marketing Services</h3>
-            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+            <img
+              alt="Illustration of digital marketing services"
+              src="./src/sign easy.jpg"
+            />
+            <h3>5. Fast, Easy, and Fully Compliant Digital Signature Services</h3>
+            <p>
+              "Enjoy a fast, efficient, and fully compliant digital signature experience.
+            </p>
           </div>
         </a>
       </div>
-      
-    
+
       <!-- Detailed Service Section -->
-      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
-        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
-        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
+      <div
+        id="services-details-web-home-more"
+        style="
+          display: none;
+          padding: 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+          background-color: #f3f4f6;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <a
+          href="#"
+          onclick="hideService()"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #b23b3b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+          "
+          >Back to Services</a
+        >
+        <div
+          id="custom-web-design-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Custom sign Designing</h1>
-          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+          <p>
+            Our innovative website design services speak for your business,
+            helping you make an immediate connection with your clients. We craft
+            visually stunning websites that provide a seamless user experience,
+            making sure they are fully responsive across all devices. Our
+            designs are user-centric, focusing on both aesthetics and
+            functionality to bring your business closer to your target audience.
+          </p>
         </div>
-        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="web-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Web Application Development</h1>
-          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+          <p>
+            We specialize in developing high-performance, user-friendly web
+            applications. Our team builds scalable and secure solutions to meet
+            your business goals, using the latest technologies for seamless
+            performance across platforms.
+          </p>
         </div>
-        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="ecommerce-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>eCommerce Web Development</h1>
-          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+          <p>
+            We provide tailored e-commerce development services to enhance your
+            business. From product displays to payment gateways, we ensure that
+            your online store is optimized for sales and customer satisfaction.
+          </p>
         </div>
-        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="mobile-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Mobile App Development</h1>
-          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+          <p>
+            Our mobile app development services include creating cross-platform
+            apps that are user-friendly, feature-rich, and optimized for
+            performance, ensuring an exceptional experience on both Android and
+            iOS devices.
+          </p>
         </div>
-        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="digital-marketing-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Digital Marketing Services</h1>
-          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
+          <p>
+            We offer comprehensive digital marketing solutions that drive
+            traffic and increase visibility. Our strategies include SEO, social
+            media marketing, and content marketing, all tailored to your
+            business needs.
+          </p>
         </div>
       </div>
     </div>
@@ -600,68 +1324,175 @@
     fofofoffofofofofofo
     fooffofofofofofofofofofofo -->
 
-    <div id="home-card-more"  class="content">
-      <div class="container-web-home-more">
+    <div id="home-card-more" class="content">
+      <div class="container-web-home-more" id="container-web-home-more-id">
         <a href="#custom-web-design" onclick="showService('custom-web-design')">
           <div class="card-web-home-more">
-            <img alt="Illustration of a custom website design" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of a custom website design"
+              src="https://placehold.co/110x110"
+            />
             <h3>Custom Card Designing</h3>
-            <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients.</p>
+            <p>
+              Our innovative website design services speak for your business,
+              helping you make an immediate connection with your clients.
+            </p>
           </div>
         </a>
-        <a href="#web-app-development" onclick="showService('web-app-development')">
+        <a
+          href="#web-app-development"
+          onclick="showService('web-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of web application development" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of web application development"
+              src="https://placehold.co/110x110"
+            />
             <h3>Web Application Development</h3>
-            <p>With our mobile and web development services, we assist in creating functional, high-performing apps and websites.</p>
+            <p>
+              With our mobile and web development services, we assist in
+              creating functional, high-performing apps and websites.
+            </p>
           </div>
         </a>
-        <a href="#ecommerce-development" onclick="showService('ecommerce-development')">
+        <a
+          href="#ecommerce-development"
+          onclick="showService('ecommerce-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of eCommerce web development" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of eCommerce web development"
+              src="https://placehold.co/110x110"
+            />
             <h3>eCommerce Web Development</h3>
-            <p>Deliver a flawless shopping experience with our customized e-commerce solutions tailored to your needs.</p>
+            <p>
+              Deliver a flawless shopping experience with our customized
+              e-commerce solutions tailored to your needs.
+            </p>
           </div>
         </a>
-        <a href="#mobile-app-development" onclick="showService('mobile-app-development')">
+        <a
+          href="#mobile-app-development"
+          onclick="showService('mobile-app-development')"
+        >
           <div class="card-web-home-more">
-            <img alt="Illustration of mobile app development" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of mobile app development"
+              src="https://placehold.co/110x110"
+            />
             <h3>Mobile App Development</h3>
-            <p>As HTML5 experts, we build cross-platform mobile applications compatible with any device or platform.</p>
+            <p>
+              As HTML5 experts, we build cross-platform mobile applications
+              compatible with any device or platform.
+            </p>
           </div>
         </a>
         <a href="#digital-marketing" onclick="showService('digital-marketing')">
           <div class="card-web-home-more">
-            <img alt="Illustration of digital marketing services" src="https://placehold.co/110x110"/>
+            <img
+              alt="Illustration of digital marketing services"
+              src="https://placehold.co/110x110"
+            />
             <h3>Digital Marketing Services</h3>
-            <p>Boost your business with our comprehensive digital marketing solutions, including SEO, social media, and content strategies.</p>
+            <p>
+              Boost your business with our comprehensive digital marketing
+              solutions, including SEO, social media, and content strategies.
+            </p>
           </div>
         </a>
       </div>
-      
-    
+
       <!-- Detailed Service Section -->
-      <div id="services-details-web-home-more" style="display:none; padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #f3f4f6;">
-        <a href="#" onclick="hideService()" style="display:inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #b23b3b; color: white; text-decoration: none; border-radius: 5px;">Back to Services</a>
-        <div id="custom-web-design-detail" class="service-detail-web-home-more" style="display:none;">
+      <div
+        id="services-details-web-home-more"
+        style="
+          display: none;
+          padding: 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+          background-color: #f3f4f6;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <a
+          href="#"
+          onclick="hideService()"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #b23b3b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+          "
+          >Back to Services</a
+        >
+        <div
+          id="custom-web-design-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Custom card Designing</h1>
-          <p>Our innovative website design services speak for your business, helping you make an immediate connection with your clients. We craft visually stunning websites that provide a seamless user experience, making sure they are fully responsive across all devices. Our designs are user-centric, focusing on both aesthetics and functionality to bring your business closer to your target audience.</p>
+          <p>
+            Our innovative website design services speak for your business,
+            helping you make an immediate connection with your clients. We craft
+            visually stunning websites that provide a seamless user experience,
+            making sure they are fully responsive across all devices. Our
+            designs are user-centric, focusing on both aesthetics and
+            functionality to bring your business closer to your target audience.
+          </p>
         </div>
-        <div id="web-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="web-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Web Application Development</h1>
-          <p>We specialize in developing high-performance, user-friendly web applications. Our team builds scalable and secure solutions to meet your business goals, using the latest technologies for seamless performance across platforms.</p>
+          <p>
+            We specialize in developing high-performance, user-friendly web
+            applications. Our team builds scalable and secure solutions to meet
+            your business goals, using the latest technologies for seamless
+            performance across platforms.
+          </p>
         </div>
-        <div id="ecommerce-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="ecommerce-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>eCommerce Web Development</h1>
-          <p>We provide tailored e-commerce development services to enhance your business. From product displays to payment gateways, we ensure that your online store is optimized for sales and customer satisfaction.</p>
+          <p>
+            We provide tailored e-commerce development services to enhance your
+            business. From product displays to payment gateways, we ensure that
+            your online store is optimized for sales and customer satisfaction.
+          </p>
         </div>
-        <div id="mobile-app-development-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="mobile-app-development-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Mobile App Development</h1>
-          <p>Our mobile app development services include creating cross-platform apps that are user-friendly, feature-rich, and optimized for performance, ensuring an exceptional experience on both Android and iOS devices.</p>
+          <p>
+            Our mobile app development services include creating cross-platform
+            apps that are user-friendly, feature-rich, and optimized for
+            performance, ensuring an exceptional experience on both Android and
+            iOS devices.
+          </p>
         </div>
-        <div id="digital-marketing-detail" class="service-detail-web-home-more" style="display:none;">
+        <div
+          id="digital-marketing-detail"
+          class="service-detail-web-home-more"
+          style="display: none"
+        >
           <h1>Digital Marketing Services</h1>
-          <p>We offer comprehensive digital marketing solutions that drive traffic and increase visibility. Our strategies include SEO, social media marketing, and content marketing, all tailored to your business needs.</p>
+          <p>
+            We offer comprehensive digital marketing solutions that drive
+            traffic and increase visibility. Our strategies include SEO, social
+            media marketing, and content marketing, all tailored to your
+            business needs.
+          </p>
         </div>
       </div>
     </div>
