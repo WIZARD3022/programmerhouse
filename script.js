@@ -6,12 +6,15 @@ function showContent(section) {
 
 function nav_display() {
     const target = document.getElementById('options');
+    const change = document.getElementById('nav-control');
     const currentDisplay = window.getComputedStyle(target).display;
 
     if (currentDisplay === "none") {
         target.style.display = "flex";
+        change.innerHTML = `<img src="./src/close.apng" alt="close" />`
     } else {
         target.style.display = "none";
+        change.innerHTML = `<img src="./src/menu.apng" alt="open" />`
     }
 }
 
@@ -222,8 +225,15 @@ function showService(service) {
         detail.style.display = "none";
     });
     document.getElementById(service + "-detail").style.display = "block";
+    console.log(window.innerWidth);
+    if (window.innerWidth < 700) {
+        document.getElementById('container-web-home-more-id').style.display = "none";
+    }
 }
 
 function hideService() {
+    if (window.innerWidth < 700) {
+        document.getElementById('container-web-home-more-id').style.display = "flex";
+    }
     document.getElementById("services-details-web-home-more").style.display = "none";
 }
