@@ -333,7 +333,7 @@ button {
   color: #000;
   text-align: justify;
 }
-@media (max-width: 400px) {
+@media (max-width: 920px) {
   .header-body-about {
     flex-direction: column;
   }
@@ -728,12 +728,20 @@ button {
   font-weight: bold;
 }
 
+.services-img {
+  height: 300px;
+  width: 250px;
+}
+
 .image-content img {
   height: var(--home-image);
   width: var(--home-image);
 }
 
-.container-web-home-more {
+.container-web-home-more,
+.container-app-home-more,
+.container-sign-home-more,
+.container-card-home-more {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -742,7 +750,10 @@ button {
   max-width: 1300px;
 }
 
-#services-details-web-home-more {
+#services-details-web-home-more,
+#services-details-app-home-more,
+#services-details-sign-home-more,
+#services-details-card-home-more {
   display: none;
   padding: 20px;
   width: 1500px;
@@ -752,7 +763,10 @@ button {
 }
 
 @media (max-width: 768px) {
-  .container-web-home-more {
+  .container-web-home-more,
+  .container-app-home-more,
+  .container-sign-home-more,
+  .container-card-home-more {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -762,7 +776,10 @@ button {
     width: auto;
     transform: translateX(-28px);
   }
-  #services-details-web-home-more {
+  #services-details-web-home-more,
+  #services-details-app-home-more,
+  #services-details-sign-home-more,
+  #services-details-card-home-more {
     display: none;
     padding: 20px;
     width: auto;
@@ -773,7 +790,10 @@ button {
 }
 
 @media (max-width: 400px) {
-  .container-web-home-more {
+  .container-web-home-more,
+  .container-app-home-more,
+  .container-sign-home-more,
+  .container-card-home-more {
     transform: none;
   }
 }
@@ -788,6 +808,7 @@ button {
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   width: 300px;
+  height: 300px;
   padding: 25px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -837,6 +858,102 @@ button {
 .card-web-home-more * {
   position: relative;
   /* z-index: 1; */
+}
+
+.detail-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #b23b3b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container-about {
+  max-width: 1400px;
+  width: 100%;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  margin: 40px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-about h1 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.header-about h1 span {
+  color: #4db8b1; /* Teal color */
+}
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: #4db8b1; /* Teal color */
+  margin: 15px auto 30px;
+  border-radius: 2px;
+}
+.team-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 30px;
+  grid-auto-rows: 1fr;
+}
+.team-member {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out,
+    box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.team-member:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+.team-member img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4db8b1; /* Teal color */
+  margin-bottom: 20px;
+}
+.team-member h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.team-member h4 {
+  font-size: 16px;
+  color: #4db8b1; /* Teal color */
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.team-member p {
+  font-size: 14px;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .container-about{
+    width: auto;
+  }
+  .team-member img{
+    width: auto;
+    height: auto;
+  }
+  .team-about {
+    grid-template-columns: 1fr; /* Stack into one column on small screens */
+  }
 }
 
 @media (max-width: 768px) {
