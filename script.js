@@ -220,20 +220,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function showService(service) {
     document.getElementById("services-details-web-home-more").style.display = "block";
-    const details = document.querySelectorAll(".service-detail-web-home-more");
-    details.forEach(function (detail) {
+    document.getElementById("services-details-app-home-more").style.display = "block";
+    document.getElementById("services-details-sign-home-more").style.display = "block";
+    document.getElementById("services-details-card-home-more").style.display = "block";
+    const details_web = document.querySelectorAll(".service-detail-web-home-more");
+    details_web.forEach(function (detail) {
+        detail.style.display = "none";
+    });
+    const details_app = document.querySelectorAll(".service-detail-app-home-more");
+    details_app.forEach(function (detail) {
+        detail.style.display = "none";
+    });
+    const details_sign = document.querySelectorAll(".service-detail-sign-home-more");
+    details_sign.forEach(function (detail) {
+        detail.style.display = "none";
+    });
+    const details_card = document.querySelectorAll(".service-detail-card-home-more");
+    details_card.forEach(function (detail) {
         detail.style.display = "none";
     });
     document.getElementById(service + "-detail").style.display = "block";
     console.log(window.innerWidth);
     if (window.innerWidth < 700) {
         document.getElementById('container-web-home-more-id').style.display = "none";
+        document.getElementById('container-app-home-more-id').style.display = "none";
+        document.getElementById('container-sign-home-more-id').style.display = "none";
+        document.getElementById('container-card-home-more-id').style.display = "none";
     }
 }
 
 function hideService() {
     if (window.innerWidth < 700) {
         document.getElementById('container-web-home-more-id').style.display = "flex";
+        document.getElementById('container-app-home-more-id').style.display = "flex";
+        document.getElementById('container-card-home-more-id').style.display = "flex";
+        document.getElementById('container-sign-home-more-id').style.display = "flex";
     }
     document.getElementById("services-details-web-home-more").style.display = "none";
+    document.getElementById("services-details-app-home-more").style.display = "none";
+    document.getElementById("services-details-card-home-more").style.display = "none";
+    document.getElementById("services-details-sign-home-more").style.display = "none";
 }
+
