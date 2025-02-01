@@ -17,12 +17,7 @@
   <body>
     <div class="header">
       <div style="display: flex; align-items: center; gap: 5px">
-        <img
-          alt="Company Logo"
-          height="50"
-          src="https://storage.googleapis.com/a1aa/image/PRiFp25Dm46MNRPZKfE3NTQ7thsy8ZexsuGrEuNcFvieEwOoA.jpg"
-          width="150"
-        />
+        <img alt="Company Logo" height="50" src="./src/logo.png" width="150" />
         <h1>The Programmer's House</h1>
       </div>
       <div class="nav lap">
@@ -41,7 +36,7 @@
           style="margin: 0; padding: 0"
           onclick="nav_display()"
         >
-          <img src="./src/menu.apng" alt="" />
+          <img style="height: 50px" src="./src/menu.apng" alt="" />
         </button>
       </div>
     </div>
@@ -130,11 +125,11 @@
     <!-- About Us Content -->
     <div id="about" class="content">
       <!-- Why Choose Us Section -->
-      <div>
+      <div style="text-align: center;">
         <div class="why-choose-us-header">
           <div class="text-content" style="color: black">
             <h2 style="font-size: 70px; text-decoration: underline">
-              About Us
+              <span style="font-size: 100px;">A</span>bout <span style="color: rgb(0, 85, 255);">Us</span>
             </h2>
           </div>
           <div class="header-body-about">
@@ -172,12 +167,14 @@
             </p>
           </div>
         </div>
+        <div id="selected-laptop" class="laptop" style="text-align: center;margin-left: 500px; width: 500px; font-size: 40px; border-radius: 55%;background-color: #000000d3;color: white; "><b style="font-size: 75px;">W</b><b>hy </b><span style="color: rgb(0, 128, 255);"><b>Us ?</b></span></div>
+        <div id="selected-phone" class="phone" style="text-align: center;margin-left: 70px; width: 250px; font-size: 40px; border-radius: 55%;background-color: #000000d3;color: white; "><b style="font-size: 65px;">W</b><b>hy </b><span style="color: rgb(0, 128, 255);"><b>Us ?</b></span></div>
         <div class="why-choose-us-container">
           <div class="why-choose-us-card">
             <img
               alt="Shield icon"
               height="50"
-              src="https://storage.googleapis.com/a1aa/image/CTNamONEf9xeJUFr6V2Ul8XSpAwC3pnwfL0QJ0MMZrYPYFPoA.jpg"
+              src="./src/about integrity.jpg"
               width="50"
             />
             <h3>We Value Integrity</h3>
@@ -190,7 +187,7 @@
             <img
               alt="Computer icon"
               height="50"
-              src="https://storage.googleapis.com/a1aa/image/OuxFAzo7W4KwJZDYgqKXYptqHEqLY4L8nDfVfpefhCpNwKegC.jpg"
+              src="./src/about work.jpg"
               width="50"
             />
             <h3>Code That Works</h3>
@@ -203,7 +200,7 @@
             <img
               alt="Deadline icon"
               height="50"
-              src="https://storage.googleapis.com/a1aa/image/emm1pYi4C3QVSKaSzcvufFP5eqpelgmxmLmvAC5YPnbUwKegC.jpg"
+              src="./src/about deadlne.jpg"
               width="50"
             />
             <h3>Never Miss Deadlines</h3>
@@ -216,7 +213,7 @@
             <img
               alt="Design icon"
               height="50"
-              src="https://storage.googleapis.com/a1aa/image/1emddTzGZEWnJig0eSBcIaSfcdPqWqeAGIHNr3tAxNakwKegC.jpg"
+              src="./src/about design.jpg"
               width="50"
             />
             <h3>Outstanding Designs</h3>
@@ -229,7 +226,7 @@
             <img
               alt="Experience icon"
               height="50"
-              src="https://storage.googleapis.com/a1aa/image/3aLsfWZHKCVqCCWKOmTmX8sAjEK70M61LTPjecynIgyKsiHUA.jpg"
+              src="./src/about experience.jpg"
               width="50"
             />
             <h3>Extensive experience</h3>
@@ -241,11 +238,41 @@
             <img
               alt="Support icon"
               height="50"
-              src="https://storage.googleapis.com/a1aa/image/KBfCWUew3UruMEghWnHMdHjeTbyRhogOeKSN6UOdejRhgV8gC.jpg"
+              src="./src/about support.jpg"
               width="50"
             />
             <h3>Dedicated support</h3>
             <p>Dedicated teams of professionals that advise and monitor the.</p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="afford icon"
+              height="50"
+              src="./src/about afford.jpg"
+              width="50"
+            />
+            <h3>Affordable</h3>
+            <p>We provide the finest pricing in the industry since we have in house provision.</p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="Technology icon"
+              height="50"
+              src="./src/about technology.jpg"
+              width="50"
+            />
+            <h3>Latest Technologies</h3>
+            <p>From website to mobile application services, we leverage best-in-class techs to keep your brand ahead of the competion</p>
+          </div>
+          <div class="why-choose-us-card">
+            <img
+              alt="Support icon"
+              height="50"
+              src="./src/about relation.jpg"
+              width="50"
+            />
+            <h3>Customer Relation Management</h3>
+            <p>90% of our company comes from references and this speaks extensively of our Outstanding services.</p>
           </div>
         </div>
         <div>
@@ -256,9 +283,9 @@
             </div>
             <div class="team-about">
               <div class="team-member">
-                <img src="https://placehold.co/110x110" alt="Jonathan Kay" />
-                <h3>deepeash ka chacha</h3>
-                <h4>Co-Founder & CEO</h4>
+                <img src="https://placehold.co/110x110" alt="AJAY KUMAR" />
+                <h3>AJAY KUMAR</h3>
+                <h4>Founder & CEO</h4>
                 <p>
                   Leads Apptopia’s daily operations, product strategy, and
                   global expansion. Passionate about leadership, innovation, and
@@ -266,8 +293,8 @@
                 </p>
               </div>
               <div class="team-member">
-                <img src="./src/vinit.jpg" alt="Serge Balyuk" />
-                <h3>Vinit Sheetal</h3>
+                <img src="./src/vinit.jpg" alt="VINIT SHEETAL" />
+                <h3>VINIT SHEETAL</h3>
                 <h4>Chief Technology Officer</h4>
                 <p>
                   Heads engineering, ensuring robust infrastructure and data
@@ -276,8 +303,8 @@
                 </p>
               </div>
               <div class="team-member">
-                <img src="./src/mahesh.png" alt="Steve Swad" />
-                <h3>Mahesh Kumar</h3>
+                <img src="./src/mahesh.png" alt="MAHESH KUMAR" />
+                <h3>MAHESH KUMAR</h3>
                 <h4>President & COO</h4>
                 <p>
                   Drives strategic vision, optimizes business operations, and
@@ -286,9 +313,9 @@
                 </p>
               </div>
               <div class="team-member">
-                <img src="./src/deepesh.jpg" alt="Tim Santos" />
-                <h3>Deepash</h3>
-                <h4>Chief Product Officer</h4>
+                <img src="./src/deepesh.jpg" alt="DEEPESH" />
+                <h3>DEEPESH</h3>
+                <h4>Co-Founder & CPO</h4>
                 <p>
                   Leads product development with a focus on innovation and user
                   experience. Dedicated to building exceptional products and
@@ -335,6 +362,7 @@
     <!-- Services Content -->
     <div id="services" class="content">
       <div class="services-container">
+        <h1 style="font-size: 50px;color: white; padding: 4px; background-color: rgba(0, 0, 0, 0.884); border-radius: 15px;"><b style="font-size: 70px;">O</b>ur <b style="color: rgb(3, 98, 251);">Services</b></h1>
         <div class="service-card">
           <img
             class="services-img"
@@ -349,7 +377,7 @@
             alt="Illustration of backend development services"
             src="./src/web backend.jpg"
           />
-          <div class="description">Backend Devlopment</div>
+          <div class="description">Backend Development</div>
         </div>
         <div class="service-card">
           <img
@@ -357,7 +385,7 @@
             alt="Illustration of Debugging"
             src="./src/web debug.jpg"
           />
-          <div class="description">Debugging and Maintenance</div>
+          <div class="description">Debugging & Maintenance</div>
         </div>
         <div class="service-card">
           <img
@@ -373,7 +401,7 @@
             alt="Illustration of Collaboration and interaction"
             src="./src/web collab.jpg"
           />
-          <div class="description">Collaboration and Interaction</div>
+          <div class="description">Collaboration & Interaction</div>
         </div>
         <div class="service-card">
           <img
@@ -382,7 +410,7 @@
             src="./src/sign secure.jpg"
           />
           <div class="description">
-            Secure and Trusted Digital Signature Solutions
+            Trust Sign
           </div>
         </div>
         <div class="service-card">
@@ -392,7 +420,7 @@
             src="./src/sign gst.jpg"
           />
           <div class="description">
-            Simplify your GST Filling with Confidence
+            GST Ease
           </div>
         </div>
         <div class="service-card">
@@ -402,7 +430,7 @@
             src="./src/sign tax.jpg"
           />
           <div class="description">
-            Streamline your Income Tax Filling Process
+            Tax Ease
           </div>
         </div>
         <div class="service-card">
@@ -412,7 +440,7 @@
             src="./src/sign trade.jpg"
           />
           <div class="description">
-            Effortless eTender Submissions with Digital Signature
+            eTender Signature
           </div>
         </div>
         <div class="service-card">
@@ -422,7 +450,7 @@
             src="./src/sign easy.jpg"
           />
           <div class="description">
-            Fast, Easy, and Fully Complaint Digital Signature Services
+            Sign Swift
           </div>
         </div>
         <div class="service-card">
@@ -463,7 +491,7 @@
             alt="Illustration of stand out boost"
             src="./src/card boost.jpg"
           />
-          <div class="description">Sand Out & Grow</div>
+          <div class="description">Stand Out & Grow</div>
         </div>
         <div class="service-card">
           <img
@@ -514,10 +542,10 @@
         <div class="capability_header">
           <div class="badge">Web Technology Expertise</div>
           <h1>Our Capabilities</h1>
-          <p>
+          <p >
             We're upgrading ourselves with the latest available technologies.
           </p>
-          <p class="description">
+          <p class="description" style="background-color: yellow; padding: 5px;">
             Our web application solutions have helped innumerable clients to
             achieve their business goals. Whether it is educational, gaming,
             beauty, fashion, healthcare or enterprise. Our applications have
@@ -2388,19 +2416,19 @@
 
     <!-- Blog Content -->
     <div id="blog" class="content">
-      <div class="text-content">
-        <h2>Our Blog</h2>
-        <p>
-          Stay updated with our latest news, insights, and stories. Join the
-          conversation today!
-        </p>
+      <div class="text-content-blog">
+        <h2 id="selected-laptop1" style="background-color: rgba(0, 0, 0, 0.879); color: white; border-radius: 55%; width: 450px; margin-left: 500px;"><b style="font-size: 80px;">O</b>ur <b style="color: rgb(0, 76, 255);">Blog</b></h2>
+        <h2 id="selected-phone1" style="background-color: rgba(0, 0, 0, 0.879); color: white; border-radius: 65%; width: 240px; margin-left: 60px; font-size: 35px;"><b style="font-size: 45px;">O</b>ur <b style="color: rgb(0, 76, 255);">Blog</b></h2>
+        <div class="container-blog">
+          <div class="blog-posts" id="blog-container"></div>
+      </div>
       </div>
     </div>
 
     <!-- FAQ Content -->
     <div id="faq" class="content">
       <div class="text-content">
-        <h2>FAQ's</h2>
+        <h1>FAQ's</h1>
         <p>
           Have questions? We have answers. Check out our frequently asked
           questions for more information.
@@ -2418,38 +2446,122 @@
             </div>
           </div>
           <div class="faq-item">
-            <span>How Effective is Flash while Designing a Website?</span>
+            <span>What services do you offer?</span>
             <i class="fas fa-chevron-down"></i>
             <div class="faq-answer">
-              Flash is outdated and not recommended for modern website design
-              due to limited support and SEO issues.
+              Custom software, web/mobile apps, AI/ML solutions, DevOps
+              automation, cloud migration, and legacy system upgrades.
             </div>
           </div>
           <div class="faq-item">
-            <span>What is a Web 2.0 Look and Feel?</span>
+            <span>Do you work with startups?</span>
             <i class="fas fa-chevron-down"></i>
             <div class="faq-answer">
-              Web 2.0 emphasizes user interaction, clean design, and responsive
-              layouts for an enhanced user experience.
+              Yes! We help startups build MVPs, scale efficiently, and secure
+              technical foundations.
             </div>
           </div>
           <div class="faq-item">
-            <span>How many Pages should my Website have?</span>
+            <span>Can you develop blockchain apps?</span>
             <i class="fas fa-chevron-down"></i>
             <div class="faq-answer">
-              The number of pages depends on your content and goals. A typical
-              website includes Home, About, Services, and Contact pages.
+              Absolutely—smart contracts, dApps, and Web3 integrations using
+              Solidity, Ethereum, or Hyperledger.
             </div>
           </div>
           <div class="faq-item">
-            <span
-              >How Important is it that my Offline Presence has synergies with
-              the Web Presence?</span
-            >
+            <span>Do you provide UI/UX design?</span>
             <i class="fas fa-chevron-down"></i>
             <div class="faq-answer">
-              It's crucial to ensure consistency between your offline and online
-              presence to build trust and brand identity.
+              Yes—wireframing, prototyping, and user testing to ensure
+              intuitive, visually appealing interfaces.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>What’s your development process?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Agile methodology: discovery → design → sprint-based development →
+              testing → launch → support.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>How do you communicate during projects?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Weekly updates via Slack/Teams, Jira/Asana for task tracking, and
+              biweekly client calls.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>Can we work with your team remotely?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Yes—we’re a remote-first company and collaborate seamlessly across
+              time zones.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>Do you sign NDAs?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Always. Your ideas, data, and IP are 100% confidential.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>Can you integrate with our in-house team?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Yes—we’ll act as an extension of your team using your preferred
+              tools (GitHub, GitLab, etc.).
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>What’s your frontend tech stack?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              React, Angular, Vue.js, or Svelte for dynamic, responsive
+              interfaces.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>Do you work with Python or Java?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Both! Python (Django/Flask) for rapid development; Java (Spring)
+              for enterprise-grade apps.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>Which mobile frameworks do you use?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Native (Swift/Kotlin) or cross-platform (Flutter/React Native) for
+              cost-effective scalability.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>Do you handle DevOps?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Yes—CI/CD pipelines, Kubernetes, Docker, and cloud infrastructure
+              (AWS, Azure, GCP).
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>Can you build AI chatbots?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Yes—NLP models (GPT, BERT) integrated into web/apps for automated
+              customer support.
+            </div>
+          </div>
+          <div class="faq-item">
+            <span>What’s your pricing model?</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="faq-answer">
+              Fixed-price (defined scope), time-and-materials (flexible
+              projects), or dedicated teams.
             </div>
           </div>
         </div>
@@ -2513,6 +2625,1586 @@
         </div>
       </div>
     </div>
+    <!-- start hogi tabhai -->
+
+    <div id="Idea_&_Conceptualization" class="content">
+      <div id="services-details-app-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div id="app-idea-detail" class="service-detail-app-home-more">
+          <h1>Why Choose Us for Idea & Conceptualization?</h1>
+          <div>
+            <img src="./src/app idea.jpg" alt="idea" />
+            <div style="display: flex; justify-content: center; gap: 15px">
+              <div>
+                At The Programmer's House, we don’t just build apps—we bring
+                your vision to life with strategy and precision. Our approach
+                ensures that your app isn’t just another project but a
+                well-thought-out, market-ready solution designed for success.
+              </div>
+              <ol>
+                <li>
+                  Personalized Consultation: We take a deep dive into your
+                  business objectives, understanding your vision to craft an app
+                  that aligns perfectly with your goals.
+                </li>
+                <li>
+                  Data-Driven Market Research: Our team conducts in-depth
+                  research on your industry, competitors, and customer behavior
+                  to give your app a competitive edge.
+                </li>
+                <li>
+                  Future-Proof Planning: We ensure your app is scalable and
+                  adaptable, so it grows with your business, avoiding costly
+                  redesigns in the future.
+                </li>
+                <li>
+                  Creative & Innovative Solutions: We don’t believe in
+                  one-size-fits-all! Every app we conceptualize is designed with
+                  uniqueness and innovation at its core.
+                </li>
+                <li>
+                  Transparent & Collaborative Process: We keep you involved at
+                  every step, ensuring the app’s features, design, and
+                  functionality align with your expectations.
+                </li>
+                <li>
+                  Business-Focused Strategy: Beyond development, we help you
+                  identify revenue opportunities, ensuring your app is not only
+                  functional but also profitable.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="Website_Development" class="content">
+      <div id="services-details-web-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+        >Back to Services</a
+        >
+        <div
+        id="web-development-detail"
+        class="service-detail-web-home-more"
+        style="display: block"
+        >
+        <h1>Website Development</h1>
+        <div>
+          <img src="./src/web development.jpg" alt="" />
+          <ol>
+              <li>
+                <div style="font-style: italic">
+                  "Enjoy a clean and modern design that makes browsing
+                  effortless and enjoyable."
+                </div>
+                <p>
+                  A clean and modern design means that the website avoids
+                  unnecessary clutter, making it easy for customers to focus on
+                  what matters most. A minimalist approach ensures that content
+                  is presented in an organized, visually appealing manner.
+                  High-quality images, consistent fonts, and well-balanced
+                  colors create a professional look that builds trust with
+                  visitors. A well-structured layout means no distractions, no
+                  confusion—just a smooth and enjoyable experience from start to
+                  finish. Why does this matter? A visually pleasing website
+                  keeps visitors engaged longer, increasing the chances of
+                  converting them into customers. Example for Customers: "We
+                  keep it simple yet stunning—our modern design makes it easy
+                  for you to find exactly what you need, without unnecessary
+                  distractions!"
+                </p>
+              </li>
+              <li>
+                <div style="font-style: italic">
+                  "Find exactly what you’re looking for in just a few clicks
+                  with our intuitive layout and menu design."
+                </div>
+                <p>
+                  The navigation menu is structured logically, so visitors don’t
+                  have to waste time searching for what they need. Clear
+                  categories and search functionality allow users to find
+                  products, services, or information in seconds. Pages are
+                  designed to load quickly and efficiently, reducing frustration
+                  and increasing user satisfaction. Logical content flow ensures
+                  that important sections (products, services, contact
+                  information) are easily accessible. A well-designed menu and
+                  layout increase conversion rates, as customers are more likely
+                  to complete actions (purchases, inquiries, sign-ups). Example
+                  for Customers: "No more endless searching! Our smart layout
+                  guides you directly to what you need, saving you time and
+                  effort."
+                </p>
+              </li>
+              <li>
+                <div style="font-style: italic">
+                  "Our website adapts perfectly to your screen size, whether
+                  you’re on a mobile phone, tablet, or desktop."
+                </div>
+                <p>
+                  Responsive design ensures that no matter what device customers
+                  use, they get the best possible experience. The layout
+                  automatically adjusts to fit different screen sizes, ensuring
+                  everything remains clear, readable, and functional. Buttons,
+                  text, and images are scaled properly, so customers don’t have
+                  to zoom in or struggle to read small text. Mobile users won’t
+                  experience slow load times or broken layouts—everything works
+                  smoothly and efficiently. With more people browsing on
+                  smartphones, mobile-friendliness is crucial for retaining
+                  visitors and boosting engagement. Example for Customers:
+                  "Switch between your phone, tablet, or laptop with ease—our
+                  website looks perfect on every device, ensuring a seamless
+                  experience everywhere!"
+                </p>
+              </li>
+              <li>
+                <div style="font-style: italic">
+                  "We’ve designed this site to feel like your personal
+                  assistant—efficient and user-friendly."
+                </div>
+                <p>
+                  Every feature is designed to anticipate what users need,
+                  creating a more personalized and efficient experience. Smart
+                  recommendations, quick search, and easy navigation make
+                  browsing effortless. The website remembers user preferences,
+                  helping them quickly return to past searches, favorite
+                  products, or saved information. Fast-loading pages, clear
+                  call-to-action buttons, and interactive elements make every
+                  interaction smooth and hassle-free. A well-designed website
+                  saves customers time and effort, just like a great personal
+                  assistant! Example for Customers: "Think of our website as
+                  your personal assistant—quick, smart, and always ready to help
+                  you find exactly what you need!"
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Backend_Development" class="content">
+      <div id="services-details-web-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div id="web-backend-detail" class="service-detail-web-home-more">
+          <h1>Backend Development</h1>
+          <img src="./src/web backend.jpg" alt="" />
+          <ol>
+            <li>
+              <div style="font-style: italic">
+                "We ensure that every page loads in a flash so you won’t have to
+                wait!"
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> A slow-loading website can
+                  frustrate visitors and make them leave before even exploring
+                  what you offer. Speed is crucial for keeping customers engaged
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> We use advanced
+                  cachingtechniques to store frequently accessed data, ensuring
+                  pagesload instantly. Our servers are optimized with CDN
+                  (ContentDelivery Network) technology, which means website
+                  content isdelivered from the closest server to your location
+                  for fasteraccess. We compress images and optimize code to
+                  reduce filesizes without compromising quality, making
+                  everything loadfaster. Our system minimizes unnecessary
+                  background processes,so your experience remains smooth and
+                  uninterrupted.
+                </div>
+                <div>
+                  <b>📌 WhatThis Means for You:</b> No more waiting for pages to
+                  load—get theinformation you need instantly! Enjoy a seamless
+                  browsingexperience, even on slower internet connections.
+                  Faster pagespeed means better search rankings, helping more
+                  people discoverour website.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "Our robust systems handle high traffic effortlessly, ensuring
+                your experience is never interrupted."
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> Imagine visiting a website during
+                  a sale or a peak time, only to find it slow or completely
+                  down. A well-built system can handle thousands of users at
+                  once without any lag.
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> We use load balancing
+                  technology, which distributes traffic efficiently so that no
+                  single server gets overwhelmed. Our servers are scalable,
+                  meaning they can expand automatically to accommodate higher
+                  demand when needed. We use asynchronous processing, allowing
+                  multiple tasks to run smoothly without delays. Our site is
+                  built with efficient database queries, ensuring quick
+                  retrieval of information without overloading the system.
+                </div>
+                <div>
+                  <b>📌 What This Means for You:</b> No downtime, even during
+                  peak hours or high-traffic events. A stable, reliable website
+                  experience no matter how many visitors are online. Faster
+                  response times, meaning you can shop, browse, or interact
+                  without frustration.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "Data security is our top priority, so you can browse, shop, or
+                interact with confidence."
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> With cyber threats on the rise,
+                  protecting customer data is essential. Users want to feel safe
+                  when browsing, entering personal details, or making purchases.
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> We use SSL encryption to secure
+                  all data transfers, ensuring that any information you enter
+                  remains private. Our platform undergoes regular security
+                  audits to identify and fix vulnerabilities before they become
+                  threats. We implement multi-layered authentication, making
+                  unauthorized access nearly impossible. Our payment systems
+                  comply with PCI DSS (Payment Card Industry Data Security
+                  Standard), ensuring safe transactions.
+                </div>
+                <div>
+                  <b>📌 What This Means for You:</b> Your personal information
+                  is completely safe—no risk of leaks or unauthorized access.
+                  Secure browsing means you can interact with the website freely
+                  without worry. Hassle-free and protected payments give you
+                  peace of mind when making transactions.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="font-style: italic">
+                "We use the latest technology to create a solid foundation for
+                everything you see on our website."
+              </div>
+              <div>
+                <div>
+                  <b>📌 Why This Matters:</b> Technology evolves quickly, and
+                  outdated websites can become slow, glitchy, or incompatible
+                  with modern devices. A strong technological foundation ensures
+                  long-term reliability.
+                </div>
+                <div>
+                  <b>📌 How We Achieve This:</b> Our site is built using modern
+                  frameworks like React, Angular, and Vue.js for a smooth and
+                  interactive experience. We use progressive web app (PWA)
+                  technology, which allows our site to function like an app on
+                  mobile devices. AI-driven analytics help us understand
+                  customer behavior and continuously improve your experience.
+                  Our website is optimized for SEO (Search Engine Optimization),
+                  ensuring it ranks higher in search results so you can find us
+                  easily.
+                </div>
+                <div>
+                  <b>📌 What This Means for You:</b> A future-proof website that
+                  stays fast, secure, and functional no matter how technology
+                  evolves. A smooth user experience with the latest innovations
+                  in web development. Easy navigation and access to information,
+                  keeping you engaged and satisfied.
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div id="Debugging_&_Maintenance" class="content">
+      <div id="services-details-web-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="web-debug-detail"
+          class="service-detail-web-home-more"
+        >
+          <h1>Debugging and Maintenance</h1>
+          <img src="./src/web debug.jpg" alt="" />
+          <ol>
+            <li>
+              <div>
+                "Behind the scenes, we’re always fixing bugs and making updates
+                to ensure everything runs smoothly."
+              </div>
+              <ul>
+                <li>
+                  "You may not see it, but our team works tirelessly to improve
+                  your browsing experience every single day."
+                </li>
+                <li>
+                  "Just like a well-oiled machine, our website undergoes
+                  continuous fine-tuning to eliminate errors and glitches."
+                </li>
+                <li>
+                  "Every line of code is checked and optimized to ensure our
+                  platform remains stable, fast, and responsive."
+                </li>
+                <li>
+                  "We believe in perfection, which is why our developers
+                  constantly test and refine every feature to give you the best
+                  experience."
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                "We monitor our site regularly to spot and fix issues before you
+                even notice them!"
+              </div>
+              <ul>
+                <li>
+                  "Think of us as your digital guardians—always watching, always
+                  improving, so you never have to worry about technical
+                  hiccups."
+                </li>
+                <li>
+                  "We run automated scans and real-time performance checks to
+                  detect and resolve problems instantly."
+                </li>
+                <li>
+                  "Our system is designed to identify and correct potential
+                  issues before they impact your experience."
+                </li>
+                <li>
+                  "From loading speed to broken links, we monitor every aspect
+                  to ensure seamless navigation for you."
+                </li>
+                <li>
+                  "We take proactive action to maintain top-notch security,
+                  performance, and reliability."
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                "Got feedback? We actively listen to improve your experience
+                further."
+              </div>
+              <ul>
+                <li>
+                  "Your voice matters! We take your feedback seriously and use
+                  it to enhance our website’s functionality."
+                </li>
+                <li>
+                  "If you ever experience an issue or have a suggestion, we’re
+                  just a message away—we’re always listening!"
+                </li>
+                <li>
+                  "Our updates are driven by your needs, ensuring that every
+                  change makes your experience better and more enjoyable."
+                </li>
+                <li>
+                  "Whether it’s a new feature request or an improvement idea,
+                  your input helps shape the future of our platform."
+                </li>
+                <li>
+                  "Your satisfaction is our priority, and we constantly refine
+                  our website based on real customer insights."
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                "Our maintenance efforts ensure a secure, up-to-date website
+                that adapts to your needs over time."
+              </div>
+              <ul>
+                <li>
+                  "We don’t just build a website and leave it—we keep it
+                  evolving to stay ahead of the latest trends and technologies."
+                </li>
+                <li>
+                  "Regular maintenance ensures that our platform remains fast,
+                  secure, and aligned with industry standards."
+                </li>
+                <li>
+                  "As customer needs change, so does our website! We
+                  continuously upgrade our features to offer the best user
+                  experience."
+                </li>
+                <li>
+                  "Security updates, performance enhancements, and new
+                  functionalities are part of our commitment to keeping our
+                  website at its best."
+                </li>
+                <li>
+                  "Think of our website as a living, breathing entity—it grows,
+                  improves, and adapts to make your experience better every
+                  day."
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div id="Database_Management" class="content">
+      <div id="services-details-web-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="web-data-detail"
+          class="service-detail-web-home-more"
+        >
+          <h1>Database Management</h1>
+          <img src="./src/web database.jpg" alt="" />
+          <ul>
+            <li>
+              <div>
+                "Your preferences and activities are securely saved, so you
+                don’t have to start over every time you visit."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                Our website remembers your choices, such as your favorite
+                products, recently viewed items, and saved settings. This means
+                you won’t have to waste time re-entering your details or
+                searching for items again. Whether it’s your shopping cart,
+                wishlist, or selected filters, everything is stored safely for
+                your convenience. If you're a registered user, you can log in
+                from any device and continue right where you left off. We use
+                secure database technology to store your preferences while
+                maintaining strict privacy controls.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "Ever added items to your cart but had to leave? Don’t
+                worry—when you come back, your cart is right where you left it!"
+              </div>
+            </li>
+            <li>
+              <div>
+                "With personalized suggestions and easy access to past orders or
+                preferences, your experience is truly yours."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                We analyze your browsing and shopping habits to recommend
+                products and services that suit your interests. Instead of
+                seeing generic recommendations, you’ll find suggestions tailored
+                specifically to your tastes. Returning customers can quickly
+                reorder previously purchased items without searching again. If
+                you have favorite categories or frequently visited sections, our
+                system will highlight those for easy access. Personalized
+                experiences lead to faster, more enjoyable interactions with our
+                website.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "Looking for something new? Our personalized recommendations
+                help you discover products you’ll love, based on your unique
+                interests!"
+              </div>
+            </li>
+            <li>
+              <div>
+                "We analyze what customers love most to keep improving our
+                offerings and services."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                Our system continuously tracks what customers interact with the
+                most—whether it’s products, blog articles, or special offers. We
+                use this data to refine our content, improve product selection,
+                and enhance user experience. Customer feedback and usage trends
+                help us introduce new features that better serve your needs. By
+                understanding what works best, we can offer better discounts,
+                promotions, and exclusive deals. The goal is to make our website
+                more engaging and useful based on what YOU love most.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "We’re always evolving! Our website adapts based on what
+                customers enjoy the most, ensuring you get the best experience
+                possible."
+              </div>
+            </li>
+            <li>
+              <div>
+                "Our data protection measures ensure that your information is
+                always safe and private."
+              </div>
+              <div>
+                <b>💡 Explanation:</b>
+
+                We use advanced encryption and security protocols to protect
+                your personal data. Our website follows strict privacy policies,
+                ensuring that your information is never shared without your
+                consent. Secure login and authentication features help prevent
+                unauthorized access to your account. Payment transactions are
+                processed through trusted, industry-standard payment gateways to
+                keep your financial data secure. We regularly update our
+                security systems to stay ahead of potential threats.
+              </div>
+              <div>
+                <b>🔹 Example for Customers:</b>
+                "Your privacy is our priority! We use top-tier security to keep
+                your data safe, so you can browse and shop with confidence."
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="Collaboration_&_Interaction" class="content">
+      <div id="services-details-web-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="web-collab-detail"
+          class="service-detail-web-home-more"
+        >
+          <h1>Collaboration and Integration</h1>
+          <img src="./src/web collab.jpg" alt="" />
+          <ul>
+            <li>
+              "We’ve collaborated with top designers and developers to create an
+              engaging, professional website."
+            </li>
+            <li>
+              "Integrated chat support means you’re never alone—help is always
+              just a message away!"
+            </li>
+            <li>
+              "We constantly innovate and integrate new tools to bring you the
+              latest in convenience and functionality."
+            </li>
+            <li>
+              "Our secure payment systems ensure smooth and worry-free
+              transactions every time."
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="UI/XI_Designer" class="content">
+      <div id="services-details-app-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="app-ui-detail"
+          class="service-detail-app-home-more"
+        >
+          <h1>Why Choose Us for UI/UX Design?</h1>
+          <img src="./src/app ui.jpg" alt="ui" />
+          <div>
+            <ol>
+              <li>
+                <b>Creative & Custom Designs:</b> We don’t use generic
+                templates—every design is uniquely crafted to reflect your
+                brand’s identity and vision.
+              </li>
+              <li>
+                <b>User-Centric Approach:</b> We focus on how real users
+                interact with apps, ensuring intuitive navigation and seamless
+                experiences.
+              </li>
+              <li>
+                <b>Cutting-Edge Tools & Trends:</b> We stay ahead of the latest
+                UI/UX design trends, using industry-leading tools like Figma,
+                Adobe XD, and Sketch to deliver modern and stylish interfaces.
+              </li>
+              <li>
+                <b>Mobile-First & Responsive Design:</b> Our designs look
+                stunning on all devices, from smartphones to tablets and
+                desktops.
+              </li>
+              <li>
+                <b>Psychology-Driven UI/UX:</b> We incorporate color psychology,
+                visual hierarchy, and interaction design principles to enhance
+                user engagement and drive conversions.
+              </li>
+              <li>
+                <b>Fast & Interactive Prototyping:</b> We provide clickable
+                prototypes, allowing you to experience the app’s look and feel
+                before development begins.
+              </li>
+              <li>
+                <b>Conversion-Focused Design:</b> Whether it's an e-commerce
+                app, a business solution, or a social platform, we design with a
+                focus on maximizing user engagement and sales.
+              </li>
+              <li>
+                <b>Seamless Collaboration & Revisions:</b> We work closely with
+                you throughout the design process, offering revisions to ensure
+                100% satisfaction.
+              </li>
+            </ol>
+            <div>
+              🚀 A great app isn’t just about functionality—it’s about
+              delivering a delightful user experience! Let’s create a design
+              that captivates your audience and keeps them coming back.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Development" class="content">
+      <div id="services-details-app-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="app-dev-detail"
+          class="service-detail-app-home-more"
+        >
+          <h1>Why Choose Us for App Development?</h1>
+          <img src="./src/app dev.jpg" alt="dev" />
+          <div>
+            <div>
+              At The Programmer's House, we don’t just develop apps—we build
+              innovative, scalable, and future-ready solutions that help your
+              business grow.
+            </div>
+            Here’s why we are the best choice for your app development needs:
+            <ol>
+              <li>
+                <b>Custom-Tailored Solutions –</b> We don’t believe in
+                one-size-fits-all. Every app we build is customized to your
+                unique business requirements, ensuring a perfect fit for your
+                goals.
+              </li>
+              <li>
+                <b>Latest Technologies & Trends –</b> We stay ahead of the curve
+                by using AI-driven features, cloud-based architecture,
+                blockchain security, and IoT connectivity, ensuring your app
+                remains future-proof.
+              </li>
+              <li>
+                <b>Seamless User Experience –</b> From intuitive navigation to
+                lightning-fast performance, we ensure your app delivers a smooth
+                and engaging experience that keeps users coming back.
+              </li>
+              <li>
+                <b>Agile & Transparent Development Process –</b> We keep you
+                informed at every stage with regular updates, demos, and
+                collaborative feedback, ensuring you are always in control of
+                the project.
+              </li>
+              <li>
+                <b>Strong Security & Data Protection –</b> Your app’s security
+                is our top priority. We implement the latest encryption
+                standards, authentication mechanisms, and data protection
+                measures to safeguard sensitive information.
+              </li>
+              <li>
+                <b>Cross-Platform Compatibility –</b> Whether it’s Android, iOS,
+                or hybrid, we ensure your app runs flawlessly across multiple
+                devices, maximizing your reach and user base.
+              </li>
+              <li>
+                <b>Scalability & Future Growth –</b> Our apps are designed to
+                grow with your business. Whether you’re adding new features or
+                expanding globally, our solutions can handle increasing demand
+                seamlessly.
+              </li>
+              <li>
+                <b>Post-Launch Support & Maintenance –</b> We don’t just deliver
+                your app and disappear! We provide ongoing maintenance, updates,
+                and 24/7 support to ensure your app stays competitive and
+                bug-free.
+              </li>
+              <li>
+                <b>Cost-Effective & Timely Delivery –</b> Get premium-quality
+                apps without breaking the bank. We offer flexible pricing models
+                and ensure on-time project completion without compromising
+                quality.
+              </li>
+            </ol>
+            <div>
+              🌟 Your Vision, Our Expertise – Let’s Create Something
+              Extraordinary! 🌟
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Testing_&_Quality" class="content">
+      <div id="services-details-app-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="app-test-detail"
+          class="service-detail-app-home-more"
+        >
+          <h1>Why Choose Us for Testing & Quality Assurance?</h1>
+          <img src="./src/app test.jpg" alt="test" />
+          <div>
+            <div>
+              At The Programmer's House, we believe that a great app isn’t just
+              about innovative features—it’s about flawless performance,
+              security, and reliability. That’s why we go the extra mile to
+              ensure your app is bug-free, secure, and optimized for success
+              before it reaches your users.
+            </div>
+            <ol>
+              <li>
+                <h3>✅ Cutting-Edge Testing Strategies</h3>
+                We use a combination of manual and automated testing techniques
+                to ensure your app performs smoothly across different devices,
+                platforms, and network conditions. From functional testing to
+                stress testing, we cover every aspect to deliver a robust
+                application.
+              </li>
+              <li>
+                <h3>🔒 Security-First Approach</h3>
+                Data security is our top priority! We conduct penetration
+                testing, encryption validation, and vulnerability assessments to
+                protect your app from cyber threats, data breaches, and hacking
+                attempts.
+              </li>
+              <li>
+                <h3>📱 Real-Device Testing for Maximum Accuracy</h3>
+                Unlike basic simulators, we test your app on real devices to
+                check compatibility, responsiveness, and user experience across
+                various screen sizes and operating systems.
+              </li>
+              <li>
+                <h3>🚀 Performance Optimization for Speed & Scalability</h3>
+                Slow-loading apps frustrate users! We optimize app speed, reduce
+                load times, and enhance scalability so that your app can handle
+                high traffic without crashing.
+              </li>
+              <li>
+                <h3>👥 User-Centric Testing – Because Users Matter Most!</h3>
+                We conduct beta testing with real users, gathering valuable
+                feedback to fine-tune the app. This ensures a seamless
+                experience that meets user expectations before the official
+                launch.
+              </li>
+              <li>
+                <h3>📊 Data-Driven Improvements</h3>
+                Using advanced analytics, we track app performance, detect
+                potential issues, and make proactive improvements. This
+                guarantees a high-quality product that keeps evolving.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Deployment_&_Launch" class="content">
+      <div id="services-details-app-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="app-launch-detail"
+          class="service-detail-app-home-more"
+        >
+          <h1>
+            Why Choose Us for Deployment & Launch? – Ensuring Your App’s Success
+            from Day One!
+          </h1>
+          <img src="./src/app launch.jpg" alt="launch" />
+          <div>
+            <div>
+              At The Programmer's House, we don’t just develop apps—we ensure
+              they reach the right audience, gain visibility, and achieve
+              success from the moment they go live.
+            </div>
+            <ol>
+              <li>
+                <b>✔ Strategic Launch Planning:</b> We don’t just publish your
+                app; we develop a customized launch strategy to maximize
+                downloads and user engagement.
+              </li>
+              <li>
+                <b>✔ Optimized for App Stores:</b> Our App Store Optimization
+                (ASO) experts ensure your app ranks higher in search results,
+                increasing organic downloads.
+              </li>
+              <li>
+                <b>✔ Pre-Launch & Post-Launch Marketing:</b> We create buzz
+                before launch and sustain momentum after release through
+                targeted campaigns, social media promotions, and influencer
+                outreach.
+              </li>
+              <li>
+                <b>✔ Beta Testing & Early Access:</b> We launch a beta version
+                to gather real user feedback, making improvements before the
+                official release.
+              </li>
+              <li>
+                <b>✔ Seamless Technical Deployment:</b> We handle server setup,
+                database configuration, cloud integration, and security measures
+                to ensure a smooth launch with no technical hiccups.
+              </li>
+              <li>
+                <b>✔ Cross-Platform Compatibility:</b> Whether it's the Google
+                Play Store, Apple App Store, or Progressive Web Apps (PWAs), we
+                optimize your app for maximum reach across multiple devices.
+              </li>
+              <li>
+                <b>✔ Performance Tracking & Analytics:</b> After launch, we
+                monitor app performance, user engagement, and retention rates to
+                provide data-driven insights for continuous improvement.
+              </li>
+              <li>
+                <b>✔ Ongoing Support & Updates:</b> Our work doesn’t stop at
+                deployment. We provide regular updates, feature enhancements,
+                and bug fixes to keep your app competitive.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Digital_Bussiness_Cards" class="content">
+      <div id="services-details-card-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="card-business-detail"
+          class="service-detail-card-home-more"
+        >
+          <h1>Why Choose Our Digital Business Cards?</h1>
+          <img src="./src/card bussiness.jpg" alt="business" />
+          <div>
+            <div>
+              <b>Instant Sharing & Connectivity:</b> With just a tap or a click,
+              you can share your contact details via text, email, or social
+              media, making it easier than ever to connect. No more fumbling for
+              paper cards or worrying about them getting lost!
+            </div>
+            <div>
+              <b>Eco-Friendly & Cost-Effective:</b> Forget about printing costs
+              and the environmental impact of paper. Our digital business cards
+              are 100% sustainable, reducing waste while keeping your brand
+              forward-thinking and environmentally conscious.
+            </div>
+            <div>
+              <b>Interactive Features:</b> Our cards aren’t just for sharing
+              contact info—they come with interactive features like clickable
+              links, social media profiles, websites, and even video
+              introductions, creating a richer, more engaging experience for
+              your clients.
+            </div>
+            <div>
+              <b>Fully Customizable:</b> Each digital card is tailored to suit
+              your brand’s personality. Choose colors, layouts, and fonts that
+              reflect your business style, ensuring your card stands out.
+            </div>
+            <div>
+              <b>Always Up-to-Date:</b> No more reprints when you change your
+              phone number or job title! You can update your card anytime, and
+              your contacts will always have the latest version—making it easier
+              to maintain relationships.
+            </div>
+            <div>
+              <b>Global Reach:</b> Share your business card worldwide with just
+              a click, making it ideal for international networking and business
+              connections.
+            </div>
+            <div>
+              With our digital business cards, you get more than just contact
+              information—you get an innovative, sustainable solution that helps
+              you stay connected and ahead of the competition. Let us help you
+              create a lasting first impression and stay connected in the most
+              modern way possible!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Logo_Design" class="content">
+      <div id="services-details-card-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="card-logo-detail"
+          class="service-detail-card-home-more"
+        >
+          <h1>Why Choose Us for Logo Design?</h1>
+          <img src="./src/card logo.jpg" alt="logo" />
+          <div>
+            <div>
+              <b>Deep Understanding of Your Brand:</b> We take the time to
+              understand your business, target audience, and values to create a
+              logo that perfectly reflects your unique identity. Every line,
+              color, and element is purposefully designed to speak to your
+              audience and convey the message you want to send.
+            </div>
+            <div>
+              <b>Innovative & Creative Solutions:</b> Our team is passionate
+              about design and always up-to-date with the latest trends. We
+              offer innovative and out-of-the-box ideas that ensure your logo
+              stands out from the crowd and remains relevant for years to come.
+            </div>
+            <div>
+              <b>Versatility & Scalability:</b> A great logo is adaptable. We
+              create logos that not only look amazing on your website but also
+              on business cards, social media, merchandise, and more. Your logo
+              will be just as striking whether it's on a small mobile screen or
+              a large billboard.
+            </div>
+            <div>
+              <b>Attention to Detail:</b> We focus on the fine details that make
+              a logo perfect. From color psychology to font choices, we
+              meticulously craft each design to ensure it’s polished,
+              professional, and impactful. Every detail counts in creating a
+              memorable brand.
+            </div>
+            <div>
+              <b>Collaborative Process:</b> We don’t just design logos—we work
+              hand-in-hand with you to ensure your vision is fully realized. Our
+              team is receptive to feedback and will adjust designs until you're
+              completely satisfied with the result. Your input drives the final
+              outcome!
+            </div>
+            <div>
+              <b>Timeless Designs:</b> Trends come and go, but great logos stand
+              the test of time. We create logos that are timeless and easily
+              recognizable, ensuring that your brand remains relevant and
+              memorable for years to come.
+            </div>
+            <div>
+              <b>Customer Satisfaction Guarantee:</b> We are committed to
+              exceeding your expectations. We offer a satisfaction guarantee
+              with our logo design services, ensuring you’ll love the final
+              product. If you don’t, we’ll revise it until it’s just right.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Visiting_card" class="content">
+      <div id="services-details-card-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="card-visiting-detail"
+          class="service-detail-card-home-more"
+        >
+          <h1>Why Choose Us for Your Visiting Cards?</h1>
+          <img src="./src/card visiting.jpg" alt="visiting" />
+          <div>
+            <div>
+              <b>Custom Design Tailored to Your Brand:</b> We understand that
+              every business is unique. Our visiting cards are designed to
+              reflect your brand's personality and convey the right message,
+              ensuring your business leaves a memorable mark on clients and
+              prospects.
+            </div>
+            <div>
+              <b>Premium Quality Materials:</b> We don’t just focus on
+              aesthetics—we also ensure the materials we use are top-notch. From
+              textured paper to sleek finishes, we offer premium materials that
+              add a touch of elegance and sophistication to your cards.
+            </div>
+            <div>
+              <b>Attention-Grabbing Design:</b> Your visiting card should stand
+              out, and we make sure it does! Our designs are carefully crafted
+              to grab attention, making sure your contact information is always
+              easy to find and remember.
+            </div>
+            <div>
+              <b>Versatility for Every Industry:</b> Whether you’re in tech,
+              fashion, hospitality, or any other industry, we create visiting
+              cards that match your business's vibe and industry standards. From
+              clean, minimalist designs to creative, bold cards, we offer
+              endless options.
+            </div>
+            <div>
+              <b>Quick Turnaround, Exceptional Results:</b> Need your cards in a
+              hurry? We provide fast and efficient design services without
+              compromising on quality, so you can always be prepared for
+              networking opportunities.
+            </div>
+            <div>
+              <b>Affordable Pricing:</b> We offer competitive pricing without
+              compromising on quality. Get professional, high-quality cards that
+              fit your budget.
+            </div>
+            <div>
+              When you choose us for your visiting card design, you’re choosing
+              a lasting impression that will reflect the high standards of your
+              business and help you build strong connections. Let’s create a
+              card that truly represents your brand!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Customized_Design" class="content">
+      <div id="services-details-card-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="card-customize-detail"
+          class="service-detail-card-home-more"
+        >
+          <h1>Why Choose Our Visiting Cards?</h1>
+          <img src="./src/card customize.jpg" alt="" />
+          <div>
+            <ol>
+              <li>
+                <b>Tailored to Your Brand:</b> We take the time to understand
+                your business and create custom visiting cards that reflect your
+                unique brand personality. Whether you’re in a corporate setting,
+                a creative field, or anything in between, we ensure your cards
+                align with your identity.
+              </li>
+              <li>
+                <b>Unforgettable Design:</b> Our cards are designed to stand
+                out. Using the finest materials and creative designs, we ensure
+                that your visiting card leaves a lasting impression, encouraging
+                potential clients or partners to keep it.
+              </li>
+              <li>
+                <b>High-Quality Materials:</b> We use only premium materials
+                that give your visiting cards a luxurious feel. From matte
+                finishes to glossy textures, and even embossed or foil accents,
+                we provide a range of options to make your cards as distinctive
+                as your brand.
+              </li>
+              <li>
+                <b>Attention to Detail:</b> Every element, from the typography
+                to the layout, is carefully crafted to ensure your visiting card
+                looks professional and high-end. Our goal is to make sure every
+                detail aligns with the quality and image of your business.
+              </li>
+              <li>
+                <b>Versatile Design Options:</b> Whether you’re looking for a
+                minimalist design, something bold and modern, or a more
+                traditional style, we offer a variety of design choices to meet
+                your specific needs.
+              </li>
+              <li>
+                <b>Affordable & Efficient Service:</b> Get premium-quality
+                visiting cards without breaking the bank. We provide affordable
+                pricing options, ensuring you receive top-tier designs at a
+                great value. Plus, we respect your time—fast turnaround times
+                mean you won’t have to wait long to start handing out your
+                cards.
+              </li>
+              <li>
+                <b>Impress from the First Handshake:</b> The first impression
+                counts, and with our custom visiting cards, you'll make sure
+                your business is remembered. Every card we design is made to
+                showcase your brand in the best light and start a conversation
+                that lasts.
+              </li>
+            </ol>
+            <p>
+              Let us help you create visiting cards that will set the tone for
+              your business and get you noticed! Contact us today to begin the
+              process of making your first impression unforgettable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Stand_out_&_Grow" class="content">
+      <div id="services-details-card-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="card-boost-detail"
+          class="service-detail-card-home-more"
+        >
+          <h1>Why us?</h1>
+          <img src="./src/card boost.jpg" alt="" />
+          <div>
+            <div>
+              "We create visual identities that elevate your brand. Our mission
+              is to help you stand out, grow, and succeed. Here’s why our
+              customers trust us to bring their vision to life"
+            </div>
+            <ol>
+              <li>
+                <b>Creative Excellence:</b> We are passionate about design and
+                believe that every business deserves a unique visual identity.
+                Our team brings a fresh and innovative approach to every
+                project, ensuring your designs are not only modern but also
+                timeless.
+              </li>
+              <li>
+                <b>Tailored to Your Business:</b> We take the time to understand
+                your goals and brand personality, so every design we create is a
+                true reflection of who you are and what you stand for. Our
+                designs are tailored specifically to your business needs—whether
+                you want to appeal to a specific audience or align with industry
+                trends, we’ve got you covered.
+              </li>
+              <li>
+                <b>Consistent Branding Across Platforms:</b> Whether it’s your
+                website, social media, or printed materials, we ensure your
+                branding is consistent and cohesive. This level of consistency
+                is key to building brand recognition and trust with your
+                customers.
+              </li>
+              <li>
+                <b>Impactful First Impressions:</b> Your brand’s first
+                impression matters more than ever. Our designs are crafted to
+                grab attention and ensure your audience takes notice—whether
+                it’s through a memorable logo, sleek digital card, or stunning
+                business stationery.
+              </li>
+              <li>
+                <b>Full Range of Services:</b> From logo design to digital
+                business cards and visiting cards, we offer a complete range of
+                services to cover all your branding needs. We are a one-stop
+                shop for businesses looking to create a lasting impact with
+                cohesive and professional design.
+              </li>
+              <li>
+                <b>Results-Driven Approach:</b> We believe that design should
+                deliver results. Our designs are crafted not just for aesthetics
+                but to drive engagement, boost conversions, and enhance customer
+                loyalty. With our designs, you’ll have the tools to build
+                stronger connections with your audience.
+              </li>
+              <li>
+                <b>Affordable Excellence:</b> Exceptional design shouldn’t come
+                at a premium. We offer competitive pricing without compromising
+                on quality, making our services accessible to businesses of all
+                sizes.
+              </li>
+              <li>
+                <b>Timely and Reliable:</b> We understand the value of your
+                time. Our team ensures that every project is delivered on
+                schedule, so you can move forward with your business goals
+                without delays.
+              </li>
+              <li>
+                <b>Long-Term Partnerships:</b> We’re not just here for a
+                one-time project—we’re here to build lasting relationships.
+                Whether you need ongoing design support or want to evolve your
+                brand over time, we’re committed to being your trusted design
+                partner for the long run.
+              </li>
+            </ol>
+            <p>
+              Let’s take your business to new heights with stunning designs that
+              attract, engage, and convert. Contact us today and let’s get
+              started on your brand’s transformation!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Trust_Sign" class="content">
+      <div id="services-details-sign-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="sign-secure-detail"
+          class="service-detail-sign-home-more"
+        >
+          <h1>Secure and Trusted Digital Signature Solutions</h1>
+          <img src="./src/sign secure.jpg" alt="secure" />
+          <div>
+            <h3>
+              "Protect your digital transactions with our highly secure and
+              legally recognized digital signature solutions. Designed to
+              safeguard your online processes, our services ensure that your
+              documents are tamper-proof and fully authenticated."
+            </h3>
+            <div>
+              <div>
+                In today’s fast-paced digital world, security is paramount,
+                especially when dealing with sensitive financial or legal data.
+                Our digital signatures offer an unparalleled level of
+                protection, ensuring that each document is verified, authentic,
+                and free from unauthorized alterations. When you sign with us,
+                you gain a robust solution recognized by industry standards and
+                governmental authorities.
+              </div>
+              <div>
+                Our digital signature technology leverages advanced encryption
+                methods, making your documents secure from the moment you sign
+                them to when they’re submitted or shared. With compliance to
+                international standards like DSC (Digital Signature Certificate)
+                and eSign, our services are designed to simplify your workflow
+                without compromising security.
+              </div>
+              <div>
+                Every digital signature issued through our platform is legally
+                binding, allowing businesses and individuals to easily sign
+                agreements, contracts, and official documents. No more worrying
+                about physical signatures, time delays, or security risks. Your
+                documents are authenticated instantly and securely, providing
+                you with a legally accepted solution for all your business and
+                personal needs.
+              </div>
+              <div>
+                With our solution, you can easily file taxes, submit tenders,
+                sign contracts, and complete business transactions—all with the
+                guarantee that your documents are secure, traceable, and
+                protected from fraud. Our clients trust us to provide peace of
+                mind through a process that is as easy as clicking a button,
+                ensuring that their sensitive data stays protected with every
+                digital signature.
+              </div>
+              <div>
+                What sets us apart? We combine ease of use with high-level
+                security and compliance. Our digital signature services are
+                integrated into various business applications, including GST
+                filings, Income Tax returns, eTender submissions, and more.
+                Every step of the way, we ensure that your digital transactions
+                are smooth, safe, and fully compliant with all legal standards.
+              </div>
+              <div>
+                Join the thousands of businesses and individuals who trust us
+                for fast, efficient, and fully secure digital signature
+                services. Don’t risk your online transactions—make the smart
+                choice today and experience the future of secure, paperless, and
+                legally compliant document signing.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="GST_Ease" class="content">
+      <div id="services-details-sign-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="sign-gst-detail"
+          class="service-detail-sign-home-more"
+        >
+          <h1>Simplify Your GST Filing with Confidence</h1>
+          <img src="./src/sign gst.jpg" alt="gst" />
+          <div>
+            "Say goodbye to complex GST filing processes. With our seamless
+            digital signature services, submitting your GST returns is not only
+            quick but also secure and fully compliant with government
+            regulations. Whether you're a small business or a large enterprise,
+            we provide a streamlined solution to ensure that your filings are
+            error-free, reducing your chances of penalties. Save valuable time
+            and focus on growing your business, while we handle the
+            technicalities of GST filing. Trust us to keep your tax submissions
+            smooth and hassle-free every time."
+
+            <h3>Why Choose Our Digital Signature Services for GST Filing?</h3>
+            <ol>
+              <li>
+                Efficient & Fast Processing: File your GST returns in minutes
+                instead of hours with our easy-to-use digital signature
+                technology.
+              </li>
+              <li>
+                100% Government Compliant: Our services are designed to meet all
+                the compliance standards set by the GST authorities, ensuring no
+                delays or legal issues.
+              </li>
+              <li>
+                Error-Free Filings: Reduce the risk of mistakes with our
+                user-friendly platform that ensures accurate submissions every
+                time.
+              </li>
+              <li>
+                Secure & Reliable: Your sensitive data and filings are protected
+                with top-notch encryption and secure protocols.
+              </li>
+              <li>
+                Affordable & Transparent Pricing: No hidden fees—just simple,
+                cost-effective solutions to help you stay on top of your GST
+                responsibilities."
+              </li>
+              <li>Grow Your Business with Confidence</li>
+            </ol>
+            <div>
+              "With our digital signature solution, you can eliminate the stress
+              of GST filing and focus on scaling your business. We make sure
+              your filings are processed accurately and in a timely manner,
+              giving you the peace of mind to concentrate on what truly
+              matters."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Tax_Ease" class="content">
+      <div id="services-details-sign-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="sign-tax-detail"
+          class="service-detail-sign-home-more"
+        >
+          <h1>Streamline Your Income Tax Filing Process</h1>
+          <img src="./src/sign tax.jpg" alt="tax" />
+          <div>
+            <div>
+              "Take the stress out of income tax filing. Our digital signature
+              solution makes submitting your returns more efficient, ensuring a
+              smooth and error-free process for both individuals and businesses,
+              all while keeping your data secure. With just a few clicks, you
+              can electronically sign and submit your tax documents, saving you
+              time and avoiding paperwork hassle.
+            </div>
+
+            <h3>Why Choose Us for Income Tax Filing?</h3>
+            <ol>
+              <li>
+                Fast and Convenient: No more waiting in long queues or worrying
+                about deadlines. With our digital signatures, you can file your
+                taxes anytime, anywhere, at your convenience.
+              </li>
+              <li>
+                100% Compliance: Stay fully compliant with government
+                regulations. Our digital signatures are legally accepted for
+                income tax returns, ensuring that your filings are recognized
+                and processed without delay.
+              </li>
+              <li>
+                Error-Free Submissions: Minimize the risk of errors or
+                rejections with our streamlined filing process. We provide
+                reliable solutions to ensure accurate and timely submissions
+                every time.
+              </li>
+              <li>
+                Enhanced Security: Your personal and financial data are
+                safeguarded with industry-leading encryption. Trust that your
+                tax filings are in safe hands with us.
+              </li>
+              <li>
+                Support for Individuals & Businesses: Whether you're filing as
+                an individual or on behalf of your business, our solution is
+                designed to meet all your tax filing needs.
+              </li>
+              <li>Maximize Your Refunds, Minimize Your Stress</li>
+            </ol>
+            <div>
+              Our easy-to-use platform ensures that your income tax filing is
+              fast, efficient, and secure, helping you get the maximum refund
+              possible while avoiding the confusion and stress of manual filing.
+              Experience a smarter way to handle your tax submissions with our
+              trusted digital signature services!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="eTender_Signature" class="content">
+      <div id="services-details-sign-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="sign-tender-detail"
+          class="service-detail-sign-home-more"
+        >
+          <h1>Effortless eTender Submissions with Digital Signatures</h1>
+          <img src="./src/sign trade.jpg" alt="tender" />
+          <div>
+            <div>
+              "Bid with ease on government and corporate eTenders using our
+              reliable and secure digital signature services. Our cutting-edge
+              digital signatures ensure that your tender documents are not only
+              legally valid but also tamper-proof, minimizing the risk of
+              rejection and enhancing your submission speed. With our service,
+              you can complete the eTender submission process with a simple,
+              secure, and legally binding click, all while adhering to stringent
+              regulatory standards."
+            </div>
+
+            <div>
+              The process of submitting tender documents often involves strict
+              deadlines and compliance requirements. With our digital signature
+              solution, we guarantee that your submissions are always on time,
+              compliant with government regulations, and free of errors,
+              preventing costly delays and rejections.
+            </div>
+
+            <h3>Why Choose Us for Your eTender Submissions?</h3>
+            <ol>
+              <li>
+                <b>Compliance-Ready:</b> Our digital signatures are fully
+                compliant with the latest eTendering standards and government
+                guidelines, ensuring that your bids are always accepted without
+                issues.
+              </li>
+
+              <li>
+                <b>Speed and Efficiency:</b> Forget the time-consuming,
+                traditional methods of document signing and submission. Our
+                platform allows you to sign and submit documents in minutes,
+                giving you more time to focus on other aspects of your business.
+              </li>
+
+              <li>
+                <b>Security You Can Trust:</b> Using top-tier encryption, our
+                digital signatures guarantee the integrity of your documents,
+                protecting sensitive information from unauthorized access or
+                tampering.
+              </li>
+
+              <li>
+                <b>Seamless Integration:</b> Our services integrate effortlessly
+                with all major eTender platforms, simplifying the entire bidding
+                process for you. Whether it's for public tenders, corporate
+                contracts, or government projects, our digital signature
+                solution works seamlessly with them all.
+              </li>
+
+              <li>
+                <b>Easy Access and Support:</b> Our user-friendly interface and
+                dedicated customer support ensure that you never face any
+                difficulties in managing your digital signatures. We offer
+                prompt assistance to guide you through the process whenever
+                needed.
+              </li>
+            </ol>
+            <h3>
+              Unlock More Opportunities with Our Digital Signature Solutions
+            </h3>
+            <div>
+              In today’s competitive market, missing out on an eTender
+              opportunity can mean losing valuable business. With our digital
+              signature services, you can unlock a world of opportunities,
+              giving you an edge over competitors who might be delayed or
+              rejected due to outdated signing methods. Whether you're bidding
+              on national government tenders, private-sector projects, or
+              international contracts, our digital signatures ensure that you
+              meet every requirement with confidence and professionalism.
+            </div>
+            <h3>Take Action Now and Experience the Future of eTendering</h3>
+            <div>
+              Don't let paperwork slow you down—empower your business with our
+              efficient, secure, and legally compliant digital signature
+              services for eTenders. Join thousands of satisfied customers who
+              have streamlined their tendering process and opened the door to
+              more projects. Get started today and take your business to new
+              heights!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Sign_Swift" class="content">
+      <div id="services-details-sign-home-more" style="display: block">
+        <a href="#" onclick="showContent('services')" class="detail-back"
+          >Back to Services</a
+        >
+        <div
+          id="sign-easy-detail"
+          class="service-detail-sign-home-more"
+        >
+          <h1>Fast, Easy, and Fully Compliant Digital Signature Services</h1>
+          <img src="./src/sign easy.jpg" alt="easy" />
+          <div>
+            <ol>
+              <li>
+                "Experience unparalleled efficiency and security with our Fast,
+                Easy, and Fully Compliant Digital Signature Solutions. Our
+                service empowers you to handle everything—from routine legal
+                agreements to complex government filings—seamlessly and
+                securely, all while ensuring full legal compliance."
+              </li>
+              <li>
+                "Whether it’s submitting GST returns, filing Income Tax
+                documents, or participating in eTenders, our digital signature
+                service makes it quick and effortless. Forget about the long
+                waits or the hassles of traditional paperwork; with our
+                solutions, your documents are signed and submitted with just a
+                few clicks, saving valuable time and reducing the chances of
+                errors."
+              </li>
+              <li>
+                "With us, you can rest assured that your business remains fully
+                compliant with local, national, and global regulations. Our
+                solutions meet the highest standards, ensuring that every
+                digital signature is legally binding, fully secure, and easy to
+                validate. Protect your business from potential compliance issues
+                and penalties with our reliable, top-tier digital signature
+                services."
+              </li>
+              <li>
+                "Maximize the efficiency of your workflows. Our digital
+                signatures not only streamline the signing process but also
+                integrate with the tools you already use, making document
+                management faster and more straightforward. From contracts and
+                agreements to tender submissions and tax filings, manage it all
+                in one place with enhanced security."
+              </li>
+              <li>
+                "Take the complexity out of the digital signature process. Our
+                team of experts is here to support you every step of the way,
+                offering personalized assistance and guidance to ensure a smooth
+                experience. Whether you’re new to digital signatures or looking
+                to upgrade your current solutions, we offer tailored support to
+                meet your specific needs."
+              </li>
+              <li>
+                "Leverage the power of digital transformation with our
+                state-of-the-art solutions. Say goodbye to paper, printing, and
+                manual signing, and move into the future with a fully digital
+                workflow. Our easy-to-use platform allows you to sign documents
+                remotely, anytime, anywhere, with just a few clicks. Secure,
+                compliant, and hassle-free."
+              </li>
+              <li>
+                "Our platform is not just fast, but also extremely secure. Built
+                with advanced encryption and authentication technology, it
+                ensures that your documents are safe from tampering,
+                unauthorized access, and fraud. Each signature is uniquely tied
+                to the individual signing, making every transaction traceable
+                and verifiable."
+              </li>
+              <li>
+                "Ready to accelerate your business processes? Sign up today and
+                take advantage of a streamlined digital signature experience
+                that combines security, speed, and compliance—all at your
+                fingertips. Empower your business to operate faster, smarter,
+                and more securely."
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- finally khatama hoge tabhai -->
 
     <!-- Footer Section -->
     <div class="footer">
