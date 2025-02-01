@@ -16,7 +16,7 @@ body {
   position: sticky;
   z-index: 1;
   /* background: linear-gradient(to right, #f6d365, #85d9fd); */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.991);
   color: #fff;
   padding: 15px 20px;
   display: flex;
@@ -25,7 +25,7 @@ body {
 }
 
 .header img {
-  height: 50px;
+  height: 70px;
 }
 @media (max-width: 400px) {
   .header img {
@@ -50,7 +50,8 @@ button {
   padding: 10px 15px;
   border: 2px solid transparent;
   border-radius: 5px;
-  background-color: #0056b3;
+  /* background-color: #0056b3; */
+  background-color: #121214fa;
   cursor: pointer;
 }
 
@@ -86,7 +87,7 @@ button {
     top: 110.875px;
     position: sticky;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.991);
     padding: 5px 5px;
   }
   .nav-opt a {
@@ -110,7 +111,8 @@ button {
   .nav-opt {
     display: none;
     flex-direction: column;
-    position: unset;
+    top: 87px;
+    position: sticky;
     z-index: 1;
     background-color: none;
     padding: 5px 5px;
@@ -122,7 +124,7 @@ button {
     padding: 10px 15px;
     border: 2px solid transparent;
     border-radius: 5px;
-    background-color: #0056b3;
+    background-color: #121214fa;
     cursor: pointer;
   }
 }
@@ -186,7 +188,7 @@ button {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.669);
+  background-color: rgba(0, 0, 0, 0.99);
   color: #fff;
 }
 
@@ -280,7 +282,7 @@ button {
   cursor: pointer;
 }
 .service-card:hover {
-  transform: scale(1.23);
+  transform: scale(1.13);
 }
 
 .tech-item-img {
@@ -289,8 +291,8 @@ button {
 }
 
 .service-card img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 200px;
 }
 
 .service-card .description {
@@ -371,9 +373,10 @@ button {
 }
 
 .why-choose-us-card img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  padding: 5px;
 }
 
 .capabilities_container {
@@ -388,6 +391,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
+  text-decoration: underline;
 }
 .capability_header h1 {
   margin: 10px 0;
@@ -443,8 +447,8 @@ button {
 .faq_header {
   text-align: center;
   padding: 20px 0;
-  color: #ff6f6f;
-  font-size: 24px;
+  color: #1d1b1b;
+  font-size: 34px;
 }
 .faq-item {
   background-color: #e6f2ff;
@@ -874,7 +878,7 @@ button {
   max-width: 1400px;
   width: 100%;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.865);
   backdrop-filter: blur(10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
@@ -901,21 +905,30 @@ button {
 }
 .team-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr); /* Two columns */
+  gap: 20px;
   grid-auto-rows: 1fr;
 }
+@media (max-width: 768px) {
+  .team-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    justify-content: center;
+    grid-auto-rows: 1fr;
+  }
+}
 .team-member {
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(20, 20, 20, 0.943);
   padding: 25px;
   border-radius: 12px;
-  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out,
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
     box-shadow 0.3s ease;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .team-member:hover {
   transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to right, #f5c72d, #38c3ff);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 .team-member img {
@@ -943,11 +956,56 @@ button {
   color: #f1f1f1;
   line-height: 1.6;
 }
+.text-content-blog{
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  color: #141212;
+}
+.container-blog {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.blog-post {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: #fff;
+}
+.blog-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.info {
+  padding: 15px;
+}
+.info h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.info p {
+  font-size: 14px;
+  color: #555;
+}
+
 @media (max-width: 768px) {
-  .container-about{
+  .container-about {
     width: auto;
   }
-  .team-member img{
+  .team-member img {
     width: auto;
     height: auto;
   }
@@ -959,15 +1017,6 @@ button {
 @media (max-width: 768px) {
   .card-web-home-more {
     width: 93%;
-  }
-}
-
-@media (max-width: 400px) {
-  .card-web-home-more {
-    width: 80%;
-  }
-  .card {
-    width: auto;
   }
 }
 
@@ -1000,7 +1049,7 @@ button {
 
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 80%;
   }
 
   .home-container {
@@ -1022,5 +1071,27 @@ button {
   .home-buttons a {
     padding: 10px 20px;
     font-size: 0.9em;
+  }
+
+  .contact-form .full-width {
+    width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-web-home-more {
+    width: 80%;
+  }
+  .card {
+    width: auto;
+  }
+
+  /* .contact-form input,
+  .contact-form textarea {
+    width: 60%;
+  } */
+
+  .contact-form .full-width {
+    width: auto;
   }
 }
