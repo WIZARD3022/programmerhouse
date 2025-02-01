@@ -1,0 +1,28 @@
+[
+    {
+      "title": "Web Development Trends",
+      "content": "Discover the latest trends in web development...",
+      "image": "web-trend.jpg"
+    },
+    {
+      "title": "SEO Best Practices",
+      "content": "Improve your website ranking with SEO...",
+      "image": "seo-practice.jpg"
+    },
+    {
+      "title": "AI in Web Tech",
+      "content": "Explore the role of AI in web technologies...",
+      "image": "ai-trend.jpg"
+    },
+    {
+      "title": "Cybersecurity Measures",
+      "content": "Protect your website from cyber threats...",
+      "image": "security.jpg"
+    },
+    {
+      "title": "Performance Optimization",
+      "content": "Boost your website’s speed and UX...",
+      "image": "performance.jpg"
+    }
+  ]
+  
