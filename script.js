@@ -2,6 +2,7 @@ function showContent(section) {
     const contents = document.querySelectorAll('.content');
     contents.forEach(content => content.classList.remove('active'));
     document.getElementById(section).classList.add('active');
+    console.log("edit honachiya")
 }
 
 function nav_display() {
@@ -11,10 +12,10 @@ function nav_display() {
 
     if (currentDisplay === "none") {
         target.style.display = "flex";
-        change.innerHTML = `<img src="./src/close.apng" alt="close" />`
+        change.innerHTML = `<img style="height: 50px;" src="./src/close.apng" alt="close" />`
     } else {
         target.style.display = "none";
-        change.innerHTML = `<img src="./src/menu.apng" alt="open" />`
+        change.innerHTML = `<img style="height: 50px;" src="./src/menu.apng" alt="open" />`
     }
 }
 
@@ -179,8 +180,38 @@ document.addEventListener("DOMContentLoaded", () => {
         card.addEventListener("mouseleave", () => {
             moreLink.style.display = "none";
         });
+
+        card.addEventListener("click", () => {
+            const titleElement = card.querySelector(".description");
+            console.log(card)
+            if (titleElement) {
+                const formattedTitle = `${titleElement.innerText.replace(/\s+/g, "_")}`;
+                console.log(formattedTitle);
+                showContent(formattedTitle)
+            } else {
+                console.log("No title found");
+            }
+        });
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    let selected_laptop = document.getElementById('selected-laptop');
+    let selected_phone = document.getElementById('selected-phone');
+    let selected_laptop1 = document.getElementById('selected-laptop1');
+    let selected_phone1 = document.getElementById('selected-phone1');
+    if (window.innerWidth < 800){
+        selected_laptop.style.display = "none";
+        selected_phone.style.display = "block";
+        selected_laptop1.style.display = "none";
+        selected_phone1.style.display = "block";
+    }
+    else{
+        selected_laptop.style.display = "block";
+        selected_phone.style.display = "none";
+        selected_laptop1.style.display = "block";
+        selected_phone1.style.display = "none";
+    }
+})
 
 // JavaScript functionality to display "More" link on hover within the card
 
@@ -215,6 +246,8 @@ document.addEventListener("DOMContentLoaded", () => {
         card.addEventListener("mouseleave", () => {
             moreLink.style.display = "none";
         });
+        
+        
     });
 });
 
@@ -262,3 +295,57 @@ function hideService() {
     document.getElementById("services-details-sign-home-more").style.display = "none";
 }
 
+function showForm() {
+    const form = document.getElementById("blogForm");
+    form.style.display =
+      form.style.display === "none" || form.style.display === ""
+        ? "block"
+        : "none";
+  }
+
+  function toggleRecentPosts() {
+    const recentPosts = document.getElementById("recentPostsSection");
+    recentPosts.style.display =
+      recentPosts.style.display === "none" ||
+      recentPosts.style.display === ""
+        ? "block"
+        : "none";
+  }
+
+//   function submitBlog() {
+//     const title = document.getElementById("title").value;
+//     const author = document.getElementById("author").value;
+//     const content = document.getElementById("content-blog").value;
+
+//     if (title && author && content) {
+//       alert("Blog submitted successfully!");
+//       document.getElementById("blogForm").reset();
+//       showForm();
+//     } else {
+//       alert("Please fill in all fields.");
+//     }
+//   }
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("./data/blogData.json")
+        .then(response => response.json())
+        .then(data => {
+            const blogContainer = document.getElementById("blog-container");
+
+            data.forEach(blog => {
+                const blogPost = document.createElement("div");
+                blogPost.classList.add("blog-post");
+
+                blogPost.innerHTML = `
+                    <img src="./data/image/${blog.image}" alt="${blog.title}">
+                    <div class="info">
+                        <h2>${blog.title}</h2>
+                        <p>${blog.content}</p>
+                    </div>
+                `;
+
+                blogContainer.appendChild(blogPost);
+            });
+        })
+        .catch(error => console.error("Error loading JSON:", error));
+});
