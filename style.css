@@ -520,19 +520,6 @@ button {
   padding: 25px;
 }
 
-@media (max-screen: 400px){
-  .container {
-    display: flex;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
 
 .contact-info {
   padding-top: 20px;
@@ -1189,6 +1176,7 @@ button {
 
   .container {
     flex-direction: column;
+    padding: 0;
   }
 
   .contact-info,
@@ -1239,6 +1227,10 @@ button {
   .contact-form textarea {
     width: 60%;
   } */
+
+  .faq_container{
+    padding: 0;
+  }
 
   .contact-form .full-width {
     width: auto;
