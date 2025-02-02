@@ -1,9 +1,12 @@
-function showContent(section) {
-    const contents = document.querySelectorAll('.content');
-    contents.forEach(content => content.classList.remove('active'));
-    document.getElementById(section).classList.add('active');
-    console.log("edit honachiya")
+function showContent(section, num) {
+    document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+    document.getElementById(section)?.classList.add('active');
+
+    if (num === 1 && window.innerWidth < 400 ) {
+        nav_display?.();
+    }
 }
+
 
 function nav_display() {
     const target = document.getElementById('options');
@@ -197,21 +200,57 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     let selected_laptop = document.getElementById('selected-laptop');
     let selected_phone = document.getElementById('selected-phone');
-    let selected_laptop1 = document.getElementById('selected-laptop1');
+    let selected_tab = document.getElementById('selected-tab');
     let selected_phone1 = document.getElementById('selected-phone1');
-    if (window.innerWidth < 800){
+    let selected_laptop1 = document.getElementById('selected-laptop1');
+    let selected_tab1 = document.getElementById('selected-tab1');
+    let selected_phone2 = document.getElementById('selected-phone2');
+    let selected_laptop2 = document.getElementById('selected-laptop2');
+    let selected_tab2 = document.getElementById('selected-tab2');
+    if (window.innerWidth < 400){
         selected_laptop.style.display = "none";
         selected_phone.style.display = "block";
+        selected_tab.style.display = "none";
         selected_laptop1.style.display = "none";
         selected_phone1.style.display = "block";
+        selected_tab1.style.display = "none";
+        selected_laptop2.style.display = "none";
+        selected_phone2.style.display = "block";
+        selected_tab2.style.display = "none";
+    }
+    else if ((window.innerWidth > 400) && (window.innerWidth < 922)){
+        selected_laptop.style.display = "none";
+        selected_phone.style.display = "none";
+        selected_tab.style.display = "block";
+        selected_laptop1.style.display = "none";
+        selected_phone1.style.display = "none";
+        selected_tab1.style.display = "block";
+        selected_laptop2.style.display = "none";
+        selected_phone2.style.display = "none";
+        selected_tab2.style.display = "block";
     }
     else{
         selected_laptop.style.display = "block";
         selected_phone.style.display = "none";
+        selected_tab.style.display = "none";
         selected_laptop1.style.display = "block";
         selected_phone1.style.display = "none";
+        selected_tab1.style.display = "none";
+        selected_laptop2.style.display = "block";
+        selected_phone2.style.display = "none";
+        selected_tab2.style.display = "none";
     }
 })
+
+function togglePanel(element) {
+    element.classList.toggle("active");
+    let panel = element.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+    } else {
+        panel.style.display = "block";
+    }
+}
 
 // JavaScript functionality to display "More" link on hover within the card
 
