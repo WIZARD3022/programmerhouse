@@ -97,7 +97,7 @@ button {
     padding: 10px 15px;
     border: 2px solid transparent;
     border-radius: 5px;
-    background-color: #0056b3;
+    background-color: #121214fa;
     cursor: pointer;
   }
 }
@@ -206,6 +206,17 @@ button {
 .footer-column ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-screen: 400px) {
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+  }
 }
 
 .footer-column ul li {
@@ -506,11 +517,11 @@ button {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  padding: 25px;
 }
 
 .contact-info {
   padding-top: 20px;
-  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -925,11 +936,13 @@ button {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
     box-shadow 0.3s ease;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .team-member:hover {
   transform: translateY(-10px);
   background: linear-gradient(to right, #f5c72d, #38c3ff);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  color: #000;
 }
 .team-member img {
   width: 300px;
@@ -941,22 +954,22 @@ button {
 }
 .team-member h3 {
   font-size: 20px;
-  color: #fff;
   margin-bottom: 10px;
   font-weight: 700;
 }
 .team-member h4 {
   font-size: 16px;
-  color: #4db8b1; /* Teal color */
+  /* color: #4db8b1; */
+  color: #089188;
   font-weight: 600;
   margin-bottom: 12px;
 }
 .team-member p {
   font-size: 14px;
-  color: #f1f1f1;
   line-height: 1.6;
 }
-.text-content-blog{
+
+.text-content-blog {
   text-align: center;
   font-size: 40px;
   text-decoration: underline;
@@ -999,6 +1012,128 @@ button {
 .info p {
   font-size: 14px;
   color: #555;
+}
+
+.container-term {
+  width: 75%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #5f5e5e96;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.409);
+  border-radius: 10px;
+}
+.header-term {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+.header-term h1 {
+  color: white;
+  /* color: #0056b3; */
+  font-size: 2.2em;
+}
+.accordion {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+.accordion:hover {
+  background: linear-gradient(135deg, #0056b3, #004094);
+}
+.accordion i {
+  transition: transform 0.3s;
+}
+.panel {
+  display: none;
+  padding: 15px;
+  background: #eef3fc;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+.active i {
+  transform: rotate(90deg);
+}
+
+.header-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 32px;
+  color: blue;
+  margin: 0;
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: blue;
+  margin-top: 20px;
+  border-bottom: 2px solid blue;
+  padding-bottom: 5px;
+}
+
+.privacy-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.privacy-list {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.privacy-list li {
+  margin-bottom: 5px;
+}
+
+.service-detail-sign-home-more,
+.service-detail-card-home-more,
+.service-detail-app-home-more,
+.service-detail-web-home-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfect{
+  width: 350px;
+  height: 350px;
+}
+
+
+@media (max-width: 768px) {
+  .container-term {
+    width: 90%;
+  }
+  .header-term h1 {
+    font-size: 1.8em;
+  }
+  .perfect{
+    width: auto;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
