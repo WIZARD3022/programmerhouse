@@ -90,29 +90,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add interactivity for contact details
     document.querySelectorAll(".contact-info div").forEach((infoItem) => {
-    infoItem.addEventListener("click", function () {
-        const title = infoItem.querySelector(".title").innerText.trim(); // Trim to avoid extra spaces
-
-        switch (title) {
-            case "Call Us.":
-                window.location.href = "tel:+919991337677";
-                break;
-            case "WhatsApp.":
-                window.open("https://wa.me/919991337677", "_blank");
-                break;
-            case "Email.":
-                window.location.href = "mailto:theprogrammerhouse@gmail.com";
-                break;
-            case "Location.":
-                window.open("https://maps.app.goo.gl/SC57f4d1swQtTNQp9", "_blank");
-                break;
-            default:
-                console.error("No matching case for:", title);
-                break;
+        infoItem.addEventListener("click", function () {
+            const title = infoItem.querySelector(".title").innerText.trim(); // Trim to avoid extra spaces
+    
+            switch (title) {
+                case "Call Us.":
+                    window.location.href = "tel:+919991337677";
+                    break;
+                case "WhatsApp.":
+                    window.open("https://wa.me/919991337677", "_blank");
+                    break;
+                case "Email.":
+                    window.location.href = "mailto:theprogrammerhouse@gmail.com";
+                    break;
+                case "Location.":
+                    window.open("https://maps.app.goo.gl/SC57f4d1swQtTNQp9", "_blank");
+                    break;
+                default:
+                    console.error("No matching case for:", title);
+                    break;
             }
         });
     });
-
+    
 
     // Helper function to validate email format
     function validateEmail(email) {
