@@ -109,11 +109,10 @@ document.addEventListener("DOMContentLoaded", function () {
             default:
                 console.error("No matching case for:", title);
                 break;
-        }
+            }
+        });
     });
-});
 
-    });
 
     // Helper function to validate email format
     function validateEmail(email) {
