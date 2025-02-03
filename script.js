@@ -95,16 +95,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
             switch (title) {
                 case "Call Us.":
-                    window.location.href = "tel:+911145047445";
+                    window.location.href = "tel:+919991337677";
                     break;
                 case "WhatsApp.":
-                    window.open("https://wa.me/919910258463", "_blank");
+                    window.open("https://wa.me/919991337677", "_blank");
                     break;
                 case "Email.":
-                    window.location.href = "mailto:info@kdrsoft.com";
+                    window.location.href = "theprogrammerhouse@gmail.com";
                     break;
                 case "Location.":
-                    window.open("https://goo.gl/maps/example", "_blank"); // Replace with the actual Google Maps link
+                    window.open("https://maps.app.goo.gl/SC57f4d1swQtTNQp9", "_blank"); // Replace with the actual Google Maps link
                     break;
                 default:
                     break;
