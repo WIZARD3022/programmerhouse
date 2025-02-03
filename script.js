@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     window.open("https://wa.me/919991337677", "_blank");
                     break;
                 case "Email.":
-                    window.location.href = "theprogrammerhouse@gmail.com";
+                    window.location.href = "mailto:theprogrammerhouse@gmail.com";
                     break;
                 case "Location.":
                     window.open("https://maps.app.goo.gl/SC57f4d1swQtTNQp9", "_blank"); // Replace with the actual Google Maps link
